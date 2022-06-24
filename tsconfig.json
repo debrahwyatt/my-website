@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
-    "typeRoots": ["./src/types"],
-    "types": ["@types/jest"],
+    "typeRoots": [
+      "./src/types",
+      "node_modules/@types",
+      "custom_typings/"
+    ],
+    "types": ["@types/jest", "jquery"],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

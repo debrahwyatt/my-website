@@ -1,25 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './domains/Home';
+import Music from './components/Music';
+import Overlay from './components/Overlay';
+import { useState } from 'react';
 
-function App() {
+
+const App = () => {
+
+  const [overlayOpen, setOverlayOpen] = useState(true);
+
+  const onLineSettingsClose = () => {
+    setOverlayOpen(false)
+  }  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div >
+        <Overlay isOpen={overlayOpen} hideModal={onLineSettingsClose} />
+      </div>
+      <div>
+        <header>
+        </header>
+        <div className="overflow-auto" style={{ height: 'auto' }}>
+          <main className="d-flex justify-content-center pt-3">
+            <div className="main-container">
+              <Switch>
+                <Route exact path="/" component={Home} />
+                {/* <Route path="/about" component={About} /> */}
+              </Switch>
+            </div>
+          </main>
+        </div>
+        <div style={{backgroundColor: "black"}}>
+          hi
+        </div >
+        <footer style={{width: "300px", backgroundColor: "black"}} />
+          
+      </div>
+      {overlayOpen === false && 
+      <Music/>
+      }
+      
+
+    </Router>
   );
 }
 
