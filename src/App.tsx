@@ -1,8 +1,13 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { useState } from 'react';
+
 import Home from './domains/Home';
 import Music from './components/Music';
 import Overlay from './components/Overlay';
-import { useState } from 'react';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import './App.css';
+import AI from './domains/AI';
 
 
 const App = () => {
@@ -14,35 +19,18 @@ const App = () => {
   }  
 
   return (
-    <Router>
-      <div >
-        <Overlay isOpen={overlayOpen} hideModal={onLineSettingsClose} />
-      </div>
-      <div>
-        <header>
-        </header>
-        <div className="overflow-auto" style={{ height: 'auto' }}>
-          <main className="d-flex justify-content-center pt-3">
-            <div className="main-container">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                {/* <Route path="/about" component={About} /> */}
-              </Switch>
-            </div>
-          </main>
-        </div>
-        <div style={{backgroundColor: "black"}}>
-          hi
-        </div >
-        <footer style={{width: "300px", backgroundColor: "black"}} />
-          
-      </div>
-      {overlayOpen === false && 
-      <Music/>
-      }
-      
-
-    </Router>
+    <div className='app-body'>
+      <Overlay isOpen={overlayOpen} hideModal={onLineSettingsClose} />
+      <Router>
+        <Header/>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/ai" component={AI} />
+        </Switch>
+        { overlayOpen === false && <Music/> }
+        <Footer/>
+      </Router>
+    </div>
   );
 }
 

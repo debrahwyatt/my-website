@@ -7,13 +7,7 @@
   overflow: hidden;
 }
 
-.modal {
-  /* 80% of window height */
-  height: 100vh;
-  overflow: hidden;
-}
-
-.blast-door{
+.blast-door {
   background-image: url("./BlastDoor.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,3 +17,10 @@
 .ms-Modal-scrollableContent {
   overflow: hidden;
 }
+
+/* Doesn't work */
+.ms-Modal {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+

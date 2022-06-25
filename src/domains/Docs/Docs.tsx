@@ -1,10 +1,10 @@
-import './Home.css';
+import './Docs.css';
 
-const Home = () => {
+const Docs = () => {
   return (
     <div className="box-holder">
       <div className="box">
-        <a href="ai" style={{display: "block", width: "100%", height: "100%"}}>AI</a>
+        <a href="www.google.com" style={{display: "block", width: "100%", height: "100%"}}>AI</a>
       </div>
       <div className="box">
         UML 
@@ -19,4 +19,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Docs
