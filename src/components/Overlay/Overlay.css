@@ -19,6 +19,8 @@
 }
 
 /* Doesn't work */
+.ms-Layer,
+.dialog,
 .ms-Modal {
   margin: 0px !important;
   padding: 0px !important;

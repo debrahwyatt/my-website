@@ -1,0 +1,8 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+  position: absolute;
+  background-color: brown;
+  border-radius: 0 0 3vh 3vh;
+}

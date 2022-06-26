@@ -1,12 +1,9 @@
-// import './Header.css';
+import './Header.css';
 
 const Header = () => {
 
     return (
-      <header>
-        <div style={{backgroundColor: "gray"}}>
-          hi
-        </div >
+      <header className="header">
       </header>
     );
 }

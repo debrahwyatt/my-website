@@ -1,0 +1,11 @@
+.banner {
+  position: absolute;
+  left: 33.5vw;
+  top: 1vw;
+  width: 40vh;
+  height: 10vh;
+  background-color: brown;
+  transform: rotate(-1deg);
+  border-radius: 5px;
+  border: 5px solid orange;
+}

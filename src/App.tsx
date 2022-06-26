@@ -8,20 +8,21 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import './App.css';
 import AI from './domains/AI';
+import Banner from './components/Banner';
 
 
 const App = () => {
 
   const [overlayOpen, setOverlayOpen] = useState(true);
-
-  const onLineSettingsClose = () => {
+  const onOverlayClose = () => {
     setOverlayOpen(false)
   }  
 
   return (
     <div className='app-body'>
-      <Overlay isOpen={overlayOpen} hideModal={onLineSettingsClose} />
+      <Overlay isOpen={overlayOpen} hideModal={onOverlayClose} />
       <Router>
+        <Banner/>
         <Header/>
         <Switch>
           <Route exact path="/" component={Home} />
