@@ -9,6 +9,8 @@ import Header from './components/Header';
 import './App.css';
 import AI from './domains/AI';
 import Banner from './components/Banner';
+import Sun from './components/Sun';
+import SoundEffects from './components/SoundEffects';
 
 
 const App = () => {
@@ -21,6 +23,8 @@ const App = () => {
   return (
     <div className='app-body'>
       <Overlay isOpen={overlayOpen} hideModal={onOverlayClose} />
+      { overlayOpen === false && <Music/> }
+      <SoundEffects/>
       <Router>
         <Banner/>
         <Header/>
@@ -28,7 +32,7 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route path="/ai" component={AI} />
         </Switch>
-        { overlayOpen === false && <Music/> }
+        <Sun/>
         <Footer/>
       </Router>
     </div>

@@ -4,5 +4,7 @@
   height: 6vh;
   position: absolute;
   background-color: brown;
-  border-radius: 0 0 3vh 3vh;
+  border-radius: 0 0 4vh 4vh;
+  border-top: 12px solid green;
+
 }
