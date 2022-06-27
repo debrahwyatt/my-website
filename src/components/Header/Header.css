@@ -5,3 +5,40 @@
   border-bottom: 1vh solid lightgray;
   z-index: 1;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .header {
+    animation: cloud-change infinite 60s linear;
+  }
+}
+
+@keyframes cloud-change {
+  0% {  
+    background-color: whitesmoke; 
+    border-bottom: 1vh solid salmon;
+  }
+  10% {  
+    background-color: white; 
+    border-bottom: 1vh solid lightgray;
+  }
+  40% {  
+    background-color: white; 
+    border-bottom: 1vh solid lightgray;
+  }
+  50% {  
+    background-color: whitesmoke; 
+    border-bottom: 1vh solid salmon;
+  }
+  52% {  
+    background-color: darkgray; 
+    border-bottom: 1vh solid dimgray;
+  }
+  98% {  
+    background-color: darkgray; 
+    border-bottom: 1vh solid dimgray;
+  }
+  100% {  
+    background-color: whitesmoke; 
+    border-bottom: 1vh solid salmon;
+  }
+}

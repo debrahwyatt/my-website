@@ -5,6 +5,43 @@
   position: absolute;
   background-color: brown;
   border-radius: 0 0 4vh 4vh;
-  border-top: 12px solid green;
+  border-top: 1.5vh solid green;
 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .footer {
+    animation: ground-change infinite 60s linear;
+  }
+}
+
+@keyframes ground-change {
+  0% {  
+    background-color: brown; 
+    border-top: 1.5vh solid green;
+  }
+  10% {  
+    background-color: #C4A484; 
+    border-top: 1.5vh solid lightgreen;
+  }
+  40% {  
+    background-color: #C4A484; 
+    border-top: 1.5vh solid lightgreen;
+  }
+  50% {  
+    background-color: brown; 
+    border-top: 1.5vh solid green;
+  }
+  52% {  
+    background-color: #654321; 
+    border-top: 1.5vh solid darkgreen;
+  }
+  98% {  
+    background-color: #654321; 
+    border-top: 1.5vh solid darkgreen;
+  }
+  100% {  
+    background-color: brown; 
+    border-top: 1.5vh solid green;
+  }
 }

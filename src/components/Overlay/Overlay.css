@@ -4,25 +4,64 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .blast-door {
-  background-image: url("./BlastDoor.png");
+  background-image: url("./blast.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  width: 50vw;
+  top: 0;
+  object-fit: contain;
 }
 
-.ms-Dialog-main,
-.ms-Modal-scrollableContent {
-  overflow: hidden;
+.blast-door-left {
+  transform: rotate(180deg);
+  left: 0;
 }
 
-/* Doesn't work */
-.ms-Layer,
-.dialog,
-.ms-Modal {
-  margin: 0px !important;
-  padding: 0px !important;
+.blast-door-right {
+  left: 50vw;
 }
 
+#blast-btn {
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  height: 20vh;
+  width: 20vh;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .blast-door-left {
+    animation: move-left 5s forwards paused;
+  }
+  .blast-door-right {
+    animation: move-right 5s forwards paused;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: translatex(0) rotate(180deg);
+  }
+  100% {
+    transform: translatex(-50vw) rotate(180deg);
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(50vw);
+  }
+}

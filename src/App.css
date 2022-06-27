@@ -17,11 +17,11 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .app-body {
-    animation: sun-set infinite 60s linear;
+    animation: sky-change infinite 60s linear;
   }
 }
 
-@keyframes sun-set {
+@keyframes sky-change {
   0% {  background-color: orangered; }
   10% {  background-color: lightskyblue; }
   40% {  background-color: lightskyblue; }

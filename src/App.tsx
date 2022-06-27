@@ -11,6 +11,7 @@ import AI from './domains/AI';
 import Banner from './components/Banner';
 import Sun from './components/Sun';
 import SoundEffects from './components/SoundEffects';
+import Cloud from './components/Cloud';
 
 
 const App = () => {
@@ -21,20 +22,25 @@ const App = () => {
   }  
 
   return (
-    <div className='app-body'>
+    <div className='app-wrapper'>
       <Overlay isOpen={overlayOpen} hideModal={onOverlayClose} />
-      { overlayOpen === false && <Music/> }
-      <SoundEffects/>
-      <Router>
-        <Banner/>
-        <Header/>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/ai" component={AI} />
-        </Switch>
-        <Sun/>
-        <Footer/>
-      </Router>
+
+      <div className='app-body'>
+        { overlayOpen === false && <Music/> }
+        <SoundEffects/>
+        <Router>
+          <Banner/>
+          <Header/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/ai" component={AI} />
+          </Switch>
+          <Sun/>
+          <div id="cloud_box"></div>
+          <Cloud/>
+          <Footer/>
+        </Router>
+      </div>
     </div>
   );
 }
