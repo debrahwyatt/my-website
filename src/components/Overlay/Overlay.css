@@ -9,7 +9,9 @@
 
 .blast-door {
   background-image: url("./blast.png");
-  background-size: cover;
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+  background-position: center;
   position: fixed;
   z-index: 10;
   height: 100vh;
@@ -32,19 +34,32 @@
   z-index: 100;
   left: 50%;
   top: 50%;
-  height: 20vh;
-  width: 20vh;
+  height: 25vh;
+  width: 25vh;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  border: 5px solid black;
 }
 
+#overlay_bg {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .blast-door-left {
-    animation: move-left 5s forwards paused;
+    animation: move-left 6s forwards paused;
   }
   .blast-door-right {
-    animation: move-right 5s forwards paused;
+    animation: move-right 6s forwards paused;
+  }
+  #overlay_bg {
+    animation: fade-in 6s forwards paused;
   }
 }
 
@@ -63,5 +78,17 @@
   }
   100% {
     transform: translatex(50vw);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+    z-index: 9;
+
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
   }
 }

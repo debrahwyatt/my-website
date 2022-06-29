@@ -1,12 +1,57 @@
 .banner {
   position: absolute;
   left: 33.5vw;
-  top: 1vw;
+  top: 3vw;
   width: 40vh;
   height: 10vh;
-  background-color: brown;
+  background-color: white;
   transform: rotate(-1deg);
   border-radius: 5px;
-  border: 5px solid orange;
+  border: 5px solid red;
   z-index: 2;
+}
+
+.banner-text {
+  text-decoration: none; /* no underline */
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .banner {
+    animation: 
+      bg-change infinite 60s linear, 
+      rainbow-border infinite 10s linear;
+  }
+  .banner-text {
+    animation: text-change infinite 60s linear;
+  }
+}
+
+@keyframes rainbow-border {
+  0% { border: 5px solid red; }
+  15% { border: 5px solid orange; }
+  30% { border: 5px solid yellow; }
+  45% { border: 5px solid green; }
+  60% { border: 5px solid blue; }
+  75% { border: 5px solid indigo; }
+  90% { border: 5px solid violet; }
+  100% { border: 5px solid red; }
+}
+
+@keyframes bg-change {
+  0% { background-color: white; }
+  50% { background-color: white; }
+  51% { background-color: black; }
+  99% { background-color: black; }
+  100% { background-color: white; }
+}
+
+@keyframes text-change {
+  0% { color: black; }
+  50% { color: black; }
+  51% { color: white; }
+  99% { color: white; }
+  100% { color: black; }
 }

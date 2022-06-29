@@ -1,6 +1,5 @@
 .box-holder {
   height: calc(100% - 12vh); 
-  /* max-width: 100% !important; */
 }
 
 .box {
@@ -13,23 +12,13 @@
   z-index: 1
 }
 
-.link {
+.floating_box {
   width: 20vh;
   height: 20vh;
-  color: white;
-  text-decoration: none; /* no underline */
 }
 
-.center {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.link:hover {
+.floating_box:hover {
   color: black;
   transition: 0.2s;
   background-color: white;
-  /* border-color: black !important; */
 }

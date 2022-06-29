@@ -1,9 +1,10 @@
 import codeMonkey from './code-monkey.mp3';
 
 const Music = () => {
+
   return (  
     <div>
-      <audio autoPlay loop id="playAudio">
+      <audio loop id="music">
         <source src={codeMonkey} type="audio/mpeg" />
       </audio>
     </div>

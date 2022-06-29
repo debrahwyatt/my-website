@@ -15,6 +15,20 @@ body {
   position: relative;
 }
 
+.link {
+  color: white;
+  text-decoration: none; /* no underline */
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .app-body {
     animation: sky-change infinite 60s linear;

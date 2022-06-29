@@ -19,15 +19,18 @@ const App = () => {
   const [overlayOpen, setOverlayOpen] = useState(true);
   const onOverlayClose = () => {
     setOverlayOpen(false)
+    const music = document.getElementById("music") as HTMLAudioElement
+    music.volume = 0.25
+    music.play()
   }  
 
   return (
     <div className='app-wrapper'>
-      <Overlay isOpen={overlayOpen} hideModal={onOverlayClose} />
+      <Overlay isOpen={overlayOpen} hideOverlay={onOverlayClose} />
+      <SoundEffects/>
 
       <div className='app-body'>
-        { overlayOpen === false && <Music/> }
-        <SoundEffects/>
+        <Music/>
         <Router>
           <Banner/>
           <Header/>
@@ -36,8 +39,8 @@ const App = () => {
             <Route path="/ai" component={AI} />
           </Switch>
           <Sun/>
-          <div id="cloud_box"></div>
           <Cloud/>
+          <div id="cloud_box"></div>
           <Footer/>
         </Router>
       </div>

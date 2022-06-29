@@ -8,37 +8,29 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .header {
-    animation: cloud-change infinite 60s linear;
+    animation: 
+      cloud-change infinite 60s linear, 
+      rainbow-border2 infinite 10s linear;
   }
 }
 
 @keyframes cloud-change {
-  0% {  
-    background-color: whitesmoke; 
-    border-bottom: 1vh solid salmon;
-  }
-  10% {  
-    background-color: white; 
-    border-bottom: 1vh solid lightgray;
-  }
-  40% {  
-    background-color: white; 
-    border-bottom: 1vh solid lightgray;
-  }
-  50% {  
-    background-color: whitesmoke; 
-    border-bottom: 1vh solid salmon;
-  }
-  52% {  
-    background-color: darkgray; 
-    border-bottom: 1vh solid dimgray;
-  }
-  98% {  
-    background-color: darkgray; 
-    border-bottom: 1vh solid dimgray;
-  }
-  100% {  
-    background-color: whitesmoke; 
-    border-bottom: 1vh solid salmon;
-  }
+  0% { background-color: whitesmoke; }
+  10% { background-color: white; }
+  40% { background-color: white; }
+  50% { background-color: whitesmoke; }
+  52% { background-color: grey; }
+  98% { background-color: grey; }
+  100% { background-color: whitesmoke; }
+}
+
+@keyframes rainbow-border2 {
+  0% { border-bottom: 1vh solid red; }
+  15% { border-bottom: 1vh solid orange; }
+  30% { border-bottom: 1vh solid yellow; }
+  45% { border-bottom: 1vh solid green; }
+  60% { border-bottom: 1vh solid blue; }
+  75% { border-bottom: 1vh solid indigo; }
+  90% { border-bottom: 1vh solid violet; }
+  100% { border-bottom: 1vh solid red; }
 }
