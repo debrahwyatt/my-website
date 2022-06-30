@@ -11,17 +11,17 @@ const Home = () => {
 
   return (
     <div className="box-holder center">
-      <div className="box center" onMouseOver={hover_sound}>
-        <Link to='/ai' className='link floating_box center h2'><h2>AI</h2></Link>
+      <div className="box center">
+        <Link to='/ai' onMouseOver={hover_sound} className='link floating_box center h2'><h2>AI</h2></Link>
       </div>
-      <div className="box" onMouseOver={hover_sound}>
-        <Link to='/uml' className='link floating_box center'><h2>UML</h2></Link>
+      <div className="box">
+        <Link to='/uml' onMouseOver={hover_sound} className='link floating_box center'><h2>UML</h2></Link>
       </div>
-      <div className="box" onMouseOver={hover_sound}>
-        <Link to='/stats' className='link floating_box center'><h2>Stats</h2></Link> 
+      <div className="box">
+        <Link to='/stats' onMouseOver={hover_sound} className='link floating_box center'><h2>Stats</h2></Link> 
       </div>
-      <div className="box" onMouseOver={hover_sound}>
-        <Link to='/docs' className='link floating_box center'><h2>Docs</h2></Link>
+      <div className="box">
+        <Link to='/docs' onMouseOver={hover_sound} className='link floating_box center'><h2>Docs</h2></Link>
       </div>
     </div>
   )

@@ -17,9 +17,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .footer {
-    animation: ground-change infinite 60s linear;
-  }
+  .footer { animation: ground-change infinite 60s linear; }
 }
 
 @keyframes ground-change {

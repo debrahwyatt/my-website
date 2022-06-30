@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import SoundEffects from './SoundEffects'
+import Sound from './Sound'
 
-test('SoundEffects: Renders', () => {
+test('Sound: Renders', () => {
   // render(<Header />)
   // const banner = screen.getByRole('img');
   // expect(banner).toHaveAttribute('src', '/banner.png');

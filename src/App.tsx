@@ -1,25 +1,25 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useState } from 'react';
 
+import AI from './domains/AI';
 import Home from './domains/Home';
-import Music from './components/Music';
-import Overlay from './components/Overlay';
+import Sun from './components/Sun';
+import Cloud from './components/Cloud';
+import Hills from './components/Hills';
+import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Overlay from './components/Overlay';
+
 import './App.css';
-import AI from './domains/AI';
-import Banner from './components/Banner';
-import Sun from './components/Sun';
-import SoundEffects from './components/SoundEffects';
-import Cloud from './components/Cloud';
 
 
 const App = () => {
 
   const [overlayOpen, setOverlayOpen] = useState(true);
   const onOverlayClose = () => {
-    setOverlayOpen(false)
     const music = document.getElementById("music") as HTMLAudioElement
+    setOverlayOpen(false)
     music.volume = 0.25
     music.play()
   }  
@@ -27,20 +27,20 @@ const App = () => {
   return (
     <div className='app-wrapper'>
       <Overlay isOpen={overlayOpen} hideOverlay={onOverlayClose} />
-      <SoundEffects/>
-
-      <div className='app-body'>
-        <Music/>
+      <div className='app'>
         <Router>
           <Banner/>
           <Header/>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/ai" component={AI} />
-          </Switch>
-          <Sun/>
-          <Cloud/>
-          <div id="cloud_box"></div>
+          <div className='app-body'>
+            <div className='content-body'>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/ai" component={AI} />
+              </Switch>
+            </div>
+            <Hills/>
+            <Sun/>
+          </div>
           <Footer/>
         </Router>
       </div>

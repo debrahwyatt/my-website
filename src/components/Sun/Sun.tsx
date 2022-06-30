@@ -5,7 +5,7 @@ const Sun = () => {
 
     return (
       <div className="sun">
-        <img src={sun} alt="the sun" width="75" height="75"></img>
+        <img src={sun} alt="the sun" width="75" height="75" className='sun-img'></img>
       </div>
     );
 }

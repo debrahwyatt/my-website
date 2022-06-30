@@ -1,27 +1,24 @@
 .centered {
-  height: 100vh; /* Magic here */
   width: 100vw; /* Magic here */
+  height: 100vh; /* Magic here */
   display: flex;
-  justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
+  justify-content: center;
 }
 
 .blast-door {
-  background-image: url("./blast.png");
-  background-size: 100% 100%;
-  /* background-repeat: no-repeat; */
-  background-position: center;
-  position: fixed;
-  z-index: 10;
-  height: 100vh;
-  width: 50vw;
   top: 0;
+  z-index: 10;
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
   object-fit: contain;
+  background-size: 100% 100%;
+  background-position: center;  
+  background-image: url("./blast.png");
 }
 
 .blast-door-left {
-  transform: rotate(180deg);
   left: 0;
 }
 
@@ -30,62 +27,47 @@
 }
 
 #blast-btn {
-  position: fixed;
-  z-index: 100;
-  left: 50%;
   top: 50%;
-  height: 25vh;
+  left: 50%;
   width: 25vh;
-  transform: translate(-50%, -50%);
+  height: 25vh;
+  z-index: 100;
+  position: fixed;
   border-radius: 50%;
   border: 5px solid black;
+  transform: translate(-50%, -50%);
 }
 
 #overlay_bg {
-  background-color: black;
+  top: 0;
+  left: 0;  
+  z-index: 9;
   width: 100vw;
   height: 100vh;
-  z-index: 9;
   position: fixed;
-  top: 0;
-  left: 0;
+  background-color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .blast-door-left {
-    animation: move-left 6s forwards paused;
-  }
-  .blast-door-right {
-    animation: move-right 6s forwards paused;
-  }
-  #overlay_bg {
-    animation: fade-in 6s forwards paused;
-  }
+  #overlay_bg { animation: fade-in 6s forwards paused; }
+  .blast-door-left { animation: move-left 6s forwards paused; }
+  .blast-door-right { animation: move-right 6s forwards paused; }
 }
 
 @keyframes move-left {
-  0% {
-    transform: translatex(0) rotate(180deg);
-  }
-  100% {
-    transform: translatex(-50vw) rotate(180deg);
-  }
+  0% { transform: translatex(0); }
+  100% { transform: translatex(-50vw); }
 }
 
 @keyframes move-right {
-  0% {
-    transform: translatex(0);
-  }
-  100% {
-    transform: translatex(50vw);
-  }
+  0% { transform: translatex(0); }
+  100% { transform: translatex(50vw); }
 }
 
 @keyframes fade-in {
   0% {
     opacity: 1;
     z-index: 9;
-
   }
   100% {
     opacity: 0;

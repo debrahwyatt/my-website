@@ -1,0 +1,26 @@
+.hill {
+  width: 50%;
+  z-index: 1;
+  height: 20vh;
+  bottom: -10vh;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.hill-1 {
+  left: -2vw;
+  background-color: green;
+  clip: rect(0, 50vw, 10vh, 2vw);
+}
+
+.hill-2 {
+  right: -1.5vw;
+  background-color: green;
+  clip: rect(0, 45vw, 10vh, 0);
+}
+
+.hill-3 {
+  left: 25%;  
+  clip: rect(0, 50vw, 10vh, 0);
+  background-color: rgb(10, 123, 10);
+}

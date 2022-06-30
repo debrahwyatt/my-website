@@ -1,31 +1,26 @@
+.sun-img {
+  width: 10vh;
+  height: 10vh;
+}
+
 .sun {
-  position: absolute;
-  transform-origin: center right;
-  bottom: 0px;
+  width: 35%;
   z-index: 0;
-  width: 50%;
+  bottom: 0;
+  right: 50%;
+  position: absolute;
+  margin-left: auto;
+  transform-origin: center right;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .sun {
-    animation: sun-spin infinite 60s linear;
-  }
+  .sun { animation: sun-spin infinite 60s linear; }
 }
 
 @keyframes sun-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  51% {
-    transform: scale(0);
-  }  
-  100% {
-    transform: scale(0);
-  }
+  0% { transform: rotate(-2deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(183deg); }
+  51% { transform: scale(0); }  
+  100% { transform: scale(0); }
 }
