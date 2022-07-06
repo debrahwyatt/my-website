@@ -12,6 +12,7 @@ import Header from './components/Header';
 import Overlay from './components/Overlay';
 
 import './App.css';
+import Stars from './components/Stars';
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Banner/>
           <Header/>
           <div className='app-body'>
+            <div className='background-fade'/>
             <div className='content-body'>
               <Switch>
                 <Route exact path="/" component={Home} />
@@ -39,6 +41,7 @@ const App = () => {
               </Switch>
             </div>
             <Hills/>
+            <Stars/>
             <Sun/>
           </div>
           <Footer/>

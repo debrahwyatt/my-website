@@ -17,11 +17,11 @@ const SoundControl = () => {
   return (  
     <div className='volume-ctrl'>
       <input 
-      type="range" 
-      min="0" 
-      max="50" 
-      defaultValue="25" 
-      onChange={e => volume(+e.target.value)}
+      type = "range" 
+      min = "0" 
+      max = "50" 
+      defaultValue = "25" 
+      onChange = {e => volume(+e.target.value)}
       />
       <button onClick={mute}>mute</button>
     </div>

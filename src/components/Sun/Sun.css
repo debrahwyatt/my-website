@@ -4,8 +4,8 @@
 }
 
 .sun {
-  width: 35%;
-  z-index: 0;
+  width: 45vw;
+  z-index: 2;
   bottom: 0;
   right: 50%;
   position: absolute;
@@ -14,13 +14,23 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .sun { animation: sun-spin infinite 60s linear; }
+  .sun { animation: 
+    sun-rotate infinite 60s linear;
+    /* sun-arc infinite 30s ease-in-out; */
+   }
 }
 
-@keyframes sun-spin {
+@keyframes sun-rotate {
   0% { transform: rotate(-2deg); }
   25% { transform: rotate(90deg); }
   50% { transform: rotate(183deg); }
   51% { transform: scale(0); }  
   100% { transform: scale(0); }
 }
+
+/* @keyframes sun-arc {
+  0% { width: 45vw; }
+  50% { width: 60vh; }
+  100% { width: 45vw; }
+} */
+
