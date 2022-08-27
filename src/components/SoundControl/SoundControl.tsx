@@ -1,12 +1,27 @@
-import { Icon, IconButton, ImageIcon } from "@fluentui/react";
+import { FaVolumeMute } from "react-icons/fa"
+import { FaVolumeUp } from "react-icons/fa"
 import './SoundControl.css';
 
 const SoundControl = () => {
-
-  const mute = () => {
+  
+  let mute = false
+  
+  const Mute = () => {
+    const v_on = document.getElementById("volume-on") as HTMLDivElement;
+    const v_off = document.getElementById("volume-off") as HTMLDivElement;
     const music = document.getElementById("music") as HTMLAudioElement;
-    if(music.muted === true) music.muted = false
-    else music.muted = true;
+
+    mute = mute !== true;
+
+    if(mute) {
+      music.muted = true
+      v_off.style.display = "inline-block"
+      v_on.style.display = "none"
+      return
+    }
+    music.muted = false
+    v_off.style.display = "none"
+    v_on.style.display = "inline-block"
   }
 
   const volume = (value: number) => {
@@ -23,7 +38,11 @@ const SoundControl = () => {
       defaultValue = "25" 
       onChange = {e => volume(+e.target.value)}
       />
-      <button onClick={mute}>mute</button>
+      &nbsp;
+      <span>
+        <FaVolumeUp id="volume-on" onClick={Mute}/>
+        <FaVolumeMute id="volume-off" onClick={Mute}/>
+      </span>
     </div>
   )
 }
