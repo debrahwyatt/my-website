@@ -1,28 +1,6 @@
-h2 {
-  font-size: 5vh;
-}
-
 .box-holder {
   height: 100%; 
-}
-
-.box {
-  z-index: 1;
-  width: 20vh;
-  margin: 5vh;
-  height: 20vh;
-  border-radius: 3vh;
-  background-color: grey;  
-  border: 1vh solid white;
-}
-
-.floating_box {
-  width: 20vh;
-  height: 20vh;
-}
-
-.floating_box:hover {
-  color: black;
-  transition: 0.2s;
-  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }

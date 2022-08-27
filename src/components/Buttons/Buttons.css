@@ -1,0 +1,15 @@
+.box {
+  z-index: 1;
+  width: 10vh;
+  margin: 1vh;
+  height: 10vh;
+  border-radius: 3vh;
+  background-color: grey;  
+  border: 1vh solid white;
+}
+
+.floating_box:hover {
+  color: black;
+  transition: 0.2s;
+  background-color: white;
+}

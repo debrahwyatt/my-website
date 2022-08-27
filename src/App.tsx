@@ -1,22 +1,22 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useState } from 'react';
 
+import './App.css';
 import AI from './domains/AI';
+import UML from './domains/UML';
+import Docs from './domains/Docs';
 import Home from './domains/Home';
 import Sun from './components/Sun';
-import Cloud from './components/Cloud';
+import Moon from './components/Moon';
+import Stats from './domains/Stats';
+import Stars from './components/Stars';
 import Hills from './components/Hills';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Overlay from './components/Overlay';
-import Stars from './components/Stars';
-import Moon from './components/Moon';
-import './App.css';
-import UML from './domains/UML';
-import Stats from './domains/Stats';
-import Docs from './domains/Docs';
 import Projects from './domains/Projects';
+import Overlay from './components/Overlay';
+
 
 
 const App = () => {
