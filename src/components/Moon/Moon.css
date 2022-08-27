@@ -1,0 +1,48 @@
+.moon {
+  top: 8vh;  
+  right: 8vh;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+}
+
+.moon_wrapper {
+  width: 100%;
+  height: 8vh;
+}
+
+.eclipse {
+  top: 8vh;  
+  right: 16vh;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 100%;
+  position: absolute;
+  background-color: black;
+  clip-path: circle(40%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .eclipse { animation: over-moon infinite 30s linear; }
+}
+
+@keyframes over-moon {
+  0% {  
+    right: 16vh;
+    height: 16vh;
+    top: 4vh;
+   }
+  50% { 
+    height: 8vh;
+    top: 8vh;
+  }
+  100% {  
+    right: 0vh; 
+    height: 16vh;
+    top: 4vh;
+  }
+}
+

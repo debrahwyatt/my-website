@@ -45,6 +45,7 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
+  pointer-events: none;
   background-color: black;
 }
 
@@ -67,6 +68,9 @@
 @keyframes fade-in {
   0% {
     opacity: 1;
+    z-index: 9;
+  }
+  99% {
     z-index: 9;
   }
   100% {

@@ -5,7 +5,7 @@ const Banner = () => {
 
     return (
       <div className='banner center'>
-        <Link to='/' className='center banner-text'><h1>Debrah's Website</h1></Link>
+        <Link to='/' className='center banner-text'><h1>Debrah Wyatt</h1></Link>
       </div>
     );
 }
