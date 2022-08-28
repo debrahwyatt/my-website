@@ -1,0 +1,85 @@
+.header {
+  z-index: 1;
+  height: 7vh;
+  display: flex;
+  align-content: end;
+  border-radius: 4vh 4vh 0 0;
+  background-color: whitesmoke;
+  border-bottom: 1vh solid lightgray;
+}
+
+.header_links {
+  margin-top: auto;
+  margin-right: 2em;
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+.back_btn {
+  margin-top: auto;
+  margin-left: 1em;
+  margin-bottom: auto;
+}
+
+.header_icon {
+  width: 4vh;
+  height: 4vh;
+  color: black;
+  margin-left: 2vh;
+}
+
+#back_btn {
+  border-radius: 25%;
+}
+
+#github_icon {
+  border-radius: 50%;
+}
+
+#linkedin_icon {
+  border-radius: 15%;
+}
+
+.header_icon:hover {
+  background-color: grey;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .header {
+    animation: 
+      cloud-change infinite 60s linear, 
+      rainbow-border2 infinite 10s linear;
+  }
+  .header_icon {
+    animation: icon-change infinite 60s linear;
+  }
+}
+
+@keyframes cloud-change {
+  0% { background-color: whitesmoke; }
+  10% { background-color: white; }
+  40% { background-color: white; }
+  50% { background-color: whitesmoke; }
+  51% { background-color: rgb(32, 32, 32); }
+  99% { background-color: rgb(32, 32, 32); }
+  100% { background-color: whitesmoke; }
+}
+
+@keyframes rainbow-border2 {
+  0% { border-bottom: 1vh solid red; }
+  15% { border-bottom: 1vh solid orange; }
+  30% { border-bottom: 1vh solid yellow; }
+  45% { border-bottom: 1vh solid green; }
+  60% { border-bottom: 1vh solid blue; }
+  75% { border-bottom: 1vh solid indigo; }
+  90% { border-bottom: 1vh solid violet; }
+  100% { border-bottom: 1vh solid red; }
+}
+
+@keyframes icon-change {
+  0% { color: black; }
+  50% { color: black; }
+  51% { color: white; }
+  99% { color: white; }
+  100% { color: black; }
+}

@@ -1,0 +1,47 @@
+.sun-img {
+  width: 10vh;
+  height: 10vh;
+}
+
+.new_sun {
+  width: 10vh;
+  height: 10vh;
+  background-color: yellow;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: coral;
+  border-width: thin;
+  background: radial-gradient(yellow, coral);
+}
+
+.sun {
+  width: 45vw;
+  z-index: 2;
+  bottom: 0;
+  right: 50%;
+  position: absolute;
+  margin-left: auto;
+  transform-origin: center right;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sun { animation: 
+    sun-rotate infinite 60s linear;
+    /* sun-arc infinite 30s ease-in-out; */
+   }
+}
+
+@keyframes sun-rotate {
+  0% { transform: rotate(-2deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(183deg); }
+  51% { transform: scale(0); }  
+  100% { transform: scale(0); }
+}
+
+/* @keyframes sun-arc {
+  0% { width: 45vw; }
+  50% { width: 60vh; }
+  100% { width: 45vw; }
+} */
+
