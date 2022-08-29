@@ -1,6 +1,6 @@
 import './BackBtn.css';
 import { FaArrowLeft } from "react-icons/fa"
-import { hoverSound } from "../Sound/Sound2"
+import { hoverSound } from "../../Sound/HoverSound"
 import { useHistory } from "react-router-dom";
 
 

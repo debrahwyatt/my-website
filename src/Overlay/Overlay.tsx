@@ -24,6 +24,10 @@ const Overlay = (props: OverlayProps) => {
     blast_door.volume = 0.1
     blast_door.play()
 
+    const music = document.getElementById("music") as HTMLAudioElement
+    music.volume = 0.25
+    music.play()
+
     props.hideOverlay();
   }
 

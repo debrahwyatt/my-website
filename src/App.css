@@ -22,15 +22,6 @@ body {
   height: calc(100% - 7vh - 6vh - 1.5vh - 1vh);
 }
 
-.background-fade {
-  position: absolute;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  z-index: 2;
-}
-
 .content-body {
   z-index: 6;
   width: 100%;
@@ -38,42 +29,8 @@ body {
   position: absolute;
 }
 
-.link {
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-decoration: none;
-}
-
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .app-body { animation: sky-change infinite 60s linear; }
-  .background-fade { 
-    animation: 
-      sky-change infinite 60s linear,
-      star-fade infinite 60s linear;
-  }
-}
-
-@keyframes sky-change {
-  0% {  background-color: orangered; }
-  10% {  background-color: lightskyblue; }
-  40% {  background-color: lightskyblue; }
-  50% {  background-color: orangered; }
-  52% {  background-color: darkblue; }
-  98% {  background-color: darkblue; }
-  100% {  background-color: orangered; }
-}
-
-@keyframes star-fade {
-  0% {  opacity: 1 }
-  50% {  opacity: 1 }
-  51% {  opacity: 0 }
-  99% {  opacity: 0 }
-  100% {  opacity: 1 }
 }

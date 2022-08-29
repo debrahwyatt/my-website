@@ -1,9 +1,9 @@
 import './Header.css';
+import Banner from './Banner';
+import BackBtn from './BackBtn';
+import { hoverSound } from '../Sound';
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
-import { hoverSound } from "./Sound/Sound2"
-import BackBtn from './BackBtn';
-import Banner from './Banner';
 
 const Header = () => {
 

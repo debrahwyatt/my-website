@@ -14,10 +14,7 @@ const App = () => {
 
   const [overlayOpen, setOverlayOpen] = useState(true);
   const onOverlayClose = () => {
-    const music = document.getElementById("music") as HTMLAudioElement
     setOverlayOpen(false)
-    music.volume = 0.25
-    music.play()
   }  
 
   return (
@@ -38,8 +35,6 @@ const App = () => {
                 <Route path="/projects" component={Projects} />
               </Switch>
             </div>
-            {/* Should be in scenery */}
-            <div className='background-fade'/> 
             <Scenery/>
           </div>
         </Router>
