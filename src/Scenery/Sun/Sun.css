@@ -8,15 +8,16 @@
   height: 10vh;
   background-color: yellow;
   border-radius: 50%;
-  border-style: solid;
-  border-color: coral;
-  border-width: thin;
-  background: radial-gradient(yellow, coral);
+  background: radial-gradient(yellow, orange);
+  box-shadow: 0 0 10px orange,
+  0 0 60px orange,
+  0 0 200px yellow,
+  inset 0 0 80px yellow;
 }
 
 .sun {
   width: 45vw;
-  z-index: 2;
+  /* z-index: 2; */
   bottom: 0;
   right: 50%;
   position: absolute;

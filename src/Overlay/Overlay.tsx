@@ -21,6 +21,7 @@ const Overlay = (props: OverlayProps) => {
     blast_btn.style.display = "none"
 
     const blast_door = document.getElementById("blast_door_sound") as HTMLAudioElement;
+    console.log(blast_door)
     blast_door.volume = 0.1
     blast_door.play()
 
@@ -32,11 +33,13 @@ const Overlay = (props: OverlayProps) => {
   }
 
   return (
-    <div>
+    <div id="overlay">
       <button id="blast-btn" onClick={onClose}><h1>Enter</h1></button>
       <div id="left-door" className="centered blast-door blast-door-left"/>
       <div id="right-door" className="centered blast-door blast-door-right"/>
       <div id="overlay_bg"></div>
+      <div id="overlay_rim"></div>
+
     </div>
   );
 }

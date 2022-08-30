@@ -1,6 +1,6 @@
 .banner {
   top: 2vh;
-  z-index: 8;
+  z-index: 1;
   width: 40vw;
   height: 10vh;
   left:  calc(50% - 20vw);

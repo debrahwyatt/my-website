@@ -8,6 +8,7 @@ import Overlay from './Overlay';
 import { useState } from 'react';
 import { AI, Docs, Home, Projects, Stats, UML } from './Content';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Sound from './Sound';
 
 
 const App = () => {
@@ -19,12 +20,13 @@ const App = () => {
 
   return (
     <div className='app-wrapper'>
+      <Sound/>
       <Overlay isOpen={overlayOpen} hideOverlay={onOverlayClose} />
       <div className='app'>
         <Router>
-          <Header/>
-          <Footer/>
+        <Header/>
           <div className='app-body'>    
+          <Scenery/>
             <div className='content-body'>
               <Switch>
                 <Route path="/ai" component={AI} />
@@ -35,8 +37,8 @@ const App = () => {
                 <Route path="/projects" component={Projects} />
               </Switch>
             </div>
-            <Scenery/>
           </div>
+          <Footer/>
         </Router>
       </div>
     </div>

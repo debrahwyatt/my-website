@@ -1,29 +1,22 @@
 .moon {
+  right: 10vw;
   width: 8rem;
   height: 8rem;
-  right: 10vw;
   border-radius: 50%;
   position: absolute;
   background-color: white;
-  z-index: 1;
+  box-shadow: 0 0 10px white,
+  0 0 30px white,
+  0 0 200px grey,
+  inset 0 0 40px grey;
 }
 
 .moon_wrapper {
-  position: absolute;
+  top: 8rem;  
   width: 100%;
   height: 8rem;
-  top: 8rem;  
-}
-
-/* .moon_spot {
   position: absolute;
-  width: 20%;
-  height: 20%;
-  background-color: grey;
-  border-radius: 50%;
-  left: 25%;
-  top: 25%;
-} */
+}
 
 /* 
 @media (prefers-reduced-motion: no-preference) {
