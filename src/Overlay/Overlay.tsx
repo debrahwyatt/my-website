@@ -21,7 +21,6 @@ const Overlay = (props: OverlayProps) => {
     blast_btn.style.display = "none"
 
     const blast_door = document.getElementById("blast_door_sound") as HTMLAudioElement;
-    console.log(blast_door)
     blast_door.volume = 0.1
     blast_door.play()
 

@@ -1,11 +1,6 @@
-.sun-img {
-  width: 10vh;
-  height: 10vh;
-}
-
 .new_sun {
-  width: 10vh;
-  height: 10vh;
+  width: 4vw;
+  height: 4vw;
   background-color: yellow;
   border-radius: 50%;
   background: radial-gradient(yellow, orange);
