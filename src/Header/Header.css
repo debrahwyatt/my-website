@@ -49,6 +49,14 @@
   }
 }
 
+@keyframes icon-change {
+  0% { color: black; }
+  50% { color: black; }
+  51% { color: white; }
+  99% { color: white; }
+  100% { color: black; }
+}
+
 @keyframes cloud-change {
   0% { background-color: whitesmoke; }
   10% { background-color: white; }
@@ -68,12 +76,4 @@
   70% { border-bottom: 1vh solid indigo; }
   84% { border-bottom: 1vh solid violet; }
   100% { border-bottom: 1vh solid red; }
-}
-
-@keyframes icon-change {
-  0% { color: black; }
-  50% { color: black; }
-  51% { color: white; }
-  99% { color: white; }
-  100% { color: black; }
 }

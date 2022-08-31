@@ -18,12 +18,12 @@
   position: absolute;
 }
 
-/* 
+
 @media (prefers-reduced-motion: no-preference) {
-  .moon { animation: moon_shift infinite 30s linear; }
+  .moon { animation: moon_shift infinite alternate 240s linear; }
 }
 
 @keyframes moon_shift {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(90vw); }
-} */
+  0% { transform: translateX(-70vw); }
+  100% { transform: translateX(0); }
+}

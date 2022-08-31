@@ -5,7 +5,7 @@ import hover_sound from './media/hover_button.mp3';
 const Sound = () => {
 
   return (  
-    <div>
+    <div id="sound">
       <audio loop id="music">
         <source src={codeMonkey} type="audio/mpeg" />
       </audio>

@@ -1,14 +1,14 @@
 import './App.css';
 
 import Header from './Header';
+import Sound from './Sound';
 import Footer from './Footer';
 import Scenery from './Scenery';
 import Overlay from './Overlay';
 
 import { useState } from 'react';
-import { AI, Docs, Home, Projects, Stats, UML } from './Content';
+import Content, { AI, Docs, Home, Projects, Stats, UML } from './Content';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Sound from './Sound';
 
 
 const App = () => {
@@ -22,12 +22,16 @@ const App = () => {
     <div className='app-wrapper'>
       <Sound/>
       <Overlay isOpen={overlayOpen} hideOverlay={onOverlayClose} />
+      {/* <div id="rim_holder">
+        <div id="rim"/>
+      </div> */}
       <div className='app'>
         <Router>
         <Header/>
           <div className='app-body'>    
           <Scenery/>
             <div className='content-body'>
+              <Content/>
               <Switch>
                 <Route path="/ai" component={AI} />
                 <Route path="/uml" component={UML} />

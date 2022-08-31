@@ -1,11 +1,14 @@
 body {
   margin: 0;
   height: 100vh;
+  max-height: 100vh;
   display: flex;
+  overflow: hidden;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   background-color: black;
+
 }
 
 .app {
@@ -34,3 +37,30 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* #rim {
+  width: 93vw;
+  height: 90vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 3vw solid grey;
+  z-index: 1;
+  overflow: hidden;
+  border-top: 5vh solid grey;
+  border-bottom: 5vh solid grey;
+  border-radius: 4vh;
+
+  
+}
+
+#rim_holder {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+} */

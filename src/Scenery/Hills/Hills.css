@@ -1,6 +1,6 @@
 #hills {
   width: 100%;
-  height: -100%;
+  overflow: hidden;
 }
 
 .hill {
@@ -14,28 +14,28 @@
 .hill-1 {
   left: -2vw;
   background-color: green;
-  clip: rect(0, 50vw, 10vh, 2vw);
-  bottom: -14vh;
-}
-
-.hill-2 {
-  right: -1.5vw;
-  background-color: green;
-  clip: rect(0, 45vw, 10vh, 0);
-  bottom: -11vh;
+  clip: rect(0, 50vw, 7vh, 2vw);
+  bottom: -13vh;
 }
 
 .hill-3 {
+  right: -1.5vw;
+  background-color: green;
+  clip: rect(0, 45vw, 10vh, 0);
+  bottom: -10vh;
+}
+
+.hill-2 {
   left: 25%;  
-  clip: rect(0, 50vw, 10vh, 0);
+  clip: rect(0, 50vw, 9vh, 0);
   background-color: rgb(10, 123, 10);
-  bottom: -12vh;
+  bottom: -11vh;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
-  .hill-2 { animation: hill1-change infinite 60s linear; }
+  .hill-3 { animation: hill1-change infinite 60s linear; }
   .hill-1 { animation: hill1-change infinite 60s linear; }
-  .hill-3 { animation: hill2-change infinite 60s linear; }
+  .hill-2 { animation: hill2-change infinite 60s linear; }
 }
 
 @keyframes hill1-change {
