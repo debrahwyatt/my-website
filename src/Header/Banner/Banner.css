@@ -64,9 +64,7 @@
   height: 100%;
   color: black;
   font-size: 5rem;
-  text-align: center;
-  text-decoration: none; /* no underline */
-  /* font-family: 'Courier New', monospace; */
+  text-decoration: none;
   font-family: 'Brush Script MT', cursive;
 }
 

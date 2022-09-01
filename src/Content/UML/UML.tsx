@@ -1,11 +1,14 @@
+import Content from '../Content';
 import './UML.css';
 
+
 const UML = () => {
+  let p1 = "UML."
+
   return (
-    <div className="box-holder">
-      UML
-    </div>
+    <Content content={p1}/>
   )
 }
+
 
 export default UML

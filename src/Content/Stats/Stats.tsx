@@ -1,10 +1,11 @@
+import Content from '../Content';
 import './Stats.css';
 
 const Stats = () => {
+  let p1 = "Stats."
+
   return (
-    <div className="box-holder">
-      Stats
-    </div>
+    <Content content={p1}/>
   )
 }
 

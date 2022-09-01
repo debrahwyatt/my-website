@@ -1,6 +1,6 @@
 .centered {
-  width: 100vw; /* Magic here */
-  height: 100vh; /* Magic here */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
 
 .blast-door {
   top: 0;
-  z-index: 3;
+  z-index: 2;
   width: 50vw;
   height: 100vh;
   position: fixed;
@@ -27,20 +27,19 @@
 }
 
 #blast-btn {
-  top: 47%;
-  left: 50%;
-  width: 30vh;
-  height: 15vh;
-  z-index: 4;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  border: 5px solid black;
-  transform: translate(-50%, -50%);
 }
 
 #overlay_bg {
   top: 0;
   left: 0;  
-  z-index: 2;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -77,10 +76,6 @@
 }
 
 @keyframes fade-in {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }

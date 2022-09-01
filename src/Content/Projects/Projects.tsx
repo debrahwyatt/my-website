@@ -1,10 +1,11 @@
+import Content from '../Content';
 import './Projects.css';
 
 const Projects = () => {
+  let p1 = "Projects."
+
   return (
-    <div>
-      Something Projects
-    </div>
+    <Content content={p1}/>
   )
 }
 

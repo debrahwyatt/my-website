@@ -36,9 +36,8 @@ const Overlay = (props: OverlayProps) => {
       <button id="blast-btn" onClick={onClose}><h1>Enter</h1></button>
       <div id="left-door" className="centered blast-door blast-door-left"/>
       <div id="right-door" className="centered blast-door blast-door-right"/>
-      <div id="overlay_bg"></div>
-      <div id="overlay_rim"></div>
-
+      <div id="overlay_bg"/>
+      <div id="test"/>
     </div>
   );
 }

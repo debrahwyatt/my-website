@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className='banner center'>
       <div className='scroll_container'>
-        <div id="scroll-text" className='banner-text banner_text'>{banner_text}</div>
+        <div id="scroll-text" className='banner-text banner_text center'>{banner_text}</div>
       </div>
     </div>
   );

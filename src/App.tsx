@@ -21,30 +21,26 @@ const App = () => {
   return (
     <div className='app-wrapper'>
       <Sound/>
-      <Overlay isOpen={overlayOpen} hideOverlay={onOverlayClose} />
-      {/* <div id="rim_holder">
-        <div id="rim"/>
-      </div> */}
       <div className='app'>
         <Router>
         <Header/>
-          <div className='app-body'>    
+        <div className='app-body'>    
           <Scenery/>
-            <div className='content-body'>
-              <Content/>
-              <Switch>
-                <Route path="/ai" component={AI} />
-                <Route path="/uml" component={UML} />
-                <Route path="/docs" component={Docs} />
-                <Route path="/stats" component={Stats} />
-                <Route exact path="/" component={Home} />
-                <Route path="/projects" component={Projects} />
-              </Switch>
-            </div>
+          <div className='content-body'>
+            <Switch>
+              <Route path="/ai" component={AI} />
+              <Route path="/uml" component={UML} />
+              <Route path="/docs" component={Docs} />
+              <Route path="/stats" component={Stats} />
+              <Route exact path="/" component={Home} />
+              <Route path="/projects" component={Projects} />
+            </Switch>
           </div>
-          <Footer/>
+        </div>
+        <Footer/>
         </Router>
       </div>
+      <Overlay isOpen={overlayOpen} hideOverlay={onOverlayClose} />
     </div>
   );
 }
