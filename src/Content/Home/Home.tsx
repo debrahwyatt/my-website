@@ -6,11 +6,9 @@ const Home = () => {
 
   return (
     <div className="box-holder center">
-      <Buttons title={"AI"} url={"/ai"}/>
-      <Buttons title={"UML"} url={"/uml"}/>
-      <Buttons title={"Stats"} url={"/stats"}/>
-      <Buttons title={"Docs"} url={"/docs"}/>
+      <Buttons title={"About"} url={"/about"}/>
       <Buttons title={"Projects"} url={"/projects"}/>
+      <Buttons title={"Documentation"} url={"/documentation"}/>
     </div>
   )
 }

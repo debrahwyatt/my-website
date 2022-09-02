@@ -34,10 +34,19 @@ const Overlay = (props: OverlayProps) => {
   return (
     <div id="overlay">
       <button id="blast-btn" onClick={onClose}><h1>Enter</h1></button>
-      <div id="left-door" className="centered blast-door blast-door-left"/>
-      <div id="right-door" className="centered blast-door blast-door-right"/>
+      <div id="left-door" className="centered blast-door blast-door-left">
+      <div className="sign2 centered">
+          <div className='sign_text'>
+            TURN AROUND
+          </div>
+        </div>
+      </div>
+      <div id="right-door" className="centered blast-door blast-door-right">
+        <div className="sign1 centered">
+          BEWARE!
+        </div>
+      </div>
       <div id="overlay_bg"/>
-      <div id="test"/>
     </div>
   );
 }

@@ -19,6 +19,53 @@
   width: 100%;
 }
 
+.banner-text {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 5rem;
+  text-decoration: none;
+  font-family: 'Brush Script MT', cursive;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .banner {
+    animation: 
+      bg-change infinite 60s linear, 
+      rainbow-border infinite 10s linear;
+  }
+  .banner-text { animation: text-change infinite 60s linear; }
+}
+
+@keyframes rainbow-border {
+  0% { border: 1vh solid red; }
+  14% { border: 1vh solid orange; }
+  28% { border: 1vh solid yellow; }
+  42% { border: 1vh solid green; }
+  56% { border: 1vh solid blue; }
+  70% { border: 1vh solid indigo; }
+  84% { border: 1vh solid violet; }
+  100% { border: 1vh solid red; }
+}
+
+/* 
+@keyframes bg-change {
+  0% { background-color: white; }
+  50% { background-color: white; }
+  51% { background-color: black; }
+  99% { background-color: black; }
+  100% { background-color: white; }
+}
+
+@keyframes text-change {
+  0% { color: black; }
+  50% { color: black; }
+  51% { color: white; }
+  99% { color: white; }
+  100% { color: black; }
+} */
+
+
 /* #scroll-text {
 
   -moz-transform: translateX(100%);
@@ -57,49 +104,4 @@
   color: green !important;
   transition: 0.2s;
   background-color: grey !important;
-} */
-
-.banner-text {
-  width: 100%;
-  height: 100%;
-  color: black;
-  font-size: 5rem;
-  text-decoration: none;
-  font-family: 'Brush Script MT', cursive;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .banner {
-    animation: 
-      bg-change infinite 60s linear, 
-      rainbow-border infinite 10s linear;
-  }
-  .banner-text { animation: text-change infinite 60s linear; }
-}
-
-@keyframes rainbow-border {
-  0% { border: 1vh solid red; }
-  14% { border: 1vh solid orange; }
-  28% { border: 1vh solid yellow; }
-  42% { border: 1vh solid green; }
-  56% { border: 1vh solid blue; }
-  70% { border: 1vh solid indigo; }
-  84% { border: 1vh solid violet; }
-  100% { border: 1vh solid red; }
-}
-/* 
-@keyframes bg-change {
-  0% { background-color: white; }
-  50% { background-color: white; }
-  51% { background-color: black; }
-  99% { background-color: black; }
-  100% { background-color: white; }
-}
-
-@keyframes text-change {
-  0% { color: black; }
-  50% { color: black; }
-  51% { color: white; }
-  99% { color: white; }
-  100% { color: black; }
 } */

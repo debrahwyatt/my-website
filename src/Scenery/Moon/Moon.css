@@ -18,12 +18,28 @@
   position: absolute;
 }
 
+#moon_phase {
+  width: 5vw;
+  height: 5vw;
+  right: 10vw;
+  z-index: 10;
+  border-radius: 50%;
+  position: absolute;
+  background-color: grey;
+  clip-path: inset(0px 0px 0px 5vw);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .moon { animation: moon_shift infinite alternate 240s linear; }
+  #moon_phase { animation: moon_phase infinite alternate 240s linear; }
 }
 
 @keyframes moon_shift {
   0% { transform: translateX(-70vw); }
   100% { transform: translateX(0); }
+}
+
+@keyframes moon_phase {
+  0% { clip-path: inset(0px 0px 0px 0px); }
+  100% { clip-path: inset(0px 0px 0px 5vw); }
 }

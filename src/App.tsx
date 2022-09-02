@@ -7,8 +7,10 @@ import Scenery from './Scenery';
 import Overlay from './Overlay';
 
 import { useState } from 'react';
-import Content, { AI, Docs, Home, Projects, Stats, UML } from './Content';
+import { Home, Projects } from './Content';
+import Documentation from './Content/Documentation';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import About from './Content/About';
 
 
 const App = () => {
@@ -28,12 +30,10 @@ const App = () => {
           <Scenery/>
           <div className='content-body'>
             <Switch>
-              <Route path="/ai" component={AI} />
-              <Route path="/uml" component={UML} />
-              <Route path="/docs" component={Docs} />
-              <Route path="/stats" component={Stats} />
               <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
               <Route path="/projects" component={Projects} />
+              <Route path="/documentation" component={Documentation} />
             </Switch>
           </div>
         </div>
