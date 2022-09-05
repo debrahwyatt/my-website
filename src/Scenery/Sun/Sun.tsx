@@ -1,12 +1,10 @@
 import './Sun.css';
-import sun from './sun.png'
 
 const Sun = () => {
 
     return (
-      <div className="sun">
-        <div className='new_sun' />
-        {/* <img src={sun} alt="the sun" width="75" height="75" className='sun-img'></img> */}
+      <div className="sun_holder">
+        <div className='sun'/>
       </div>
     );
 }

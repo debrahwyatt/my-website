@@ -29,10 +29,10 @@
 .sign1 {
   z-index: 2;
   top: 17vh;
-  right: 15vw;
-  width: 18vw;
-  height: 18vh;
-  font-size: 5vh;
+  left: 5vw;
+  width: 40vw;
+  height: 20vw;
+  font-size: 5vw;
   position: fixed;
   border-radius: 2vh;
   pointer-events: none;
@@ -45,11 +45,11 @@
 
 .sign2 {
   z-index: 2;
-  bottom: 15vh;
+  bottom: 30vh;
   left: 15vw;
   width: 15vw;
   height: 15vw;
-  font-size: 5vh;
+  font-size: 3vw;
   position: fixed;
   border-radius: 2vh;
   pointer-events: none;

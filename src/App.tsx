@@ -7,10 +7,8 @@ import Scenery from './Scenery';
 import Overlay from './Overlay';
 
 import { useState } from 'react';
-import { Home, Projects } from './Content';
-import Documentation from './Content/Documentation';
+import { Documentation, Home, Projects, About } from './Content';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import About from './Content/About';
 
 
 const App = () => {

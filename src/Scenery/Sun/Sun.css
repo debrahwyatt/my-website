@@ -1,18 +1,17 @@
-.new_sun {
-  width: 4vw;
-  height: 4vw;
+.sun {
+  width: 6vh;
+  height: 6vh;
   background-color: yellow;
   border-radius: 50%;
   background: radial-gradient(yellow, orange);
-  box-shadow: 0 0 10px orange,
-  0 0 60px orange,
-  0 0 200px yellow,
+  box-shadow: 0 0 1vh orange,
+  0 0 6vh orange,
+  0 0 20vh yellow,
   inset 0 0 80px yellow;
 }
 
-.sun {
+.sun_holder {
   width: 45vw;
-  /* z-index: 2; */
   bottom: 0;
   right: 50%;
   position: absolute;
@@ -21,9 +20,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .sun { animation: 
+  .sun_holder { animation: 
     sun-rotate infinite 60s linear;
-    /* sun-arc infinite 30s ease-in-out; */
    }
 }
 
@@ -34,10 +32,3 @@
   51% { transform: scale(0); }  
   100% { transform: scale(0); }
 }
-
-/* @keyframes sun-arc {
-  0% { width: 45vw; }
-  50% { width: 60vh; }
-  100% { width: 45vw; }
-} */
-
