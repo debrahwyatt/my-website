@@ -17,10 +17,8 @@
   opacity: 0.9;
   border-radius: 50%;
   position: relative;
-  background-color: darkblue;
+  background-color: black;
   box-shadow: inset 0 0 3vw grey;
-  transform: rotate(-45deg);
-
 }
 
 #moon_clip {
@@ -30,7 +28,6 @@
   border-radius: 50%;
   position: fixed;
   clip-path: circle(4vh);
-  transform: rotate(-45deg);
 }
 
 .moon_wrapper {
@@ -47,14 +44,13 @@
   border-radius: 50%;
   position: absolute;
   background-color: grey;
-  transform: rotate(-45deg);
   clip-path: inset(0px 0px 0px 8vh);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .moon { animation: moon_shift infinite alternate 240s linear; }
   #moon_clip { animation: moon_shift infinite alternate 240s linear; }
-  #moon_sky { animation: moon_phase infinite 510s; }
+  #moon_sky { animation: moon_phase infinite 330s; }
 }
 
 @keyframes moon_shift {
@@ -63,7 +59,7 @@
 }
 
 @keyframes moon_phase {
-  0% { transform: translate(11vh, 1vh); }
+  0% { transform: translate(11vh, 0vh); }
   50% { transform: translateX(0vh, 0vh); }
-  100% { transform: translate(-11vh, -1vh); }
+  100% { transform: translate(-11vh, 0vh); }
 }

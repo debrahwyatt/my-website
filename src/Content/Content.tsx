@@ -1,4 +1,5 @@
 import './Content.css';
+import { ProjectContent } from './Projects/ProjectContent';
 
 interface contentProp {
   content: string
@@ -12,7 +13,7 @@ const Content = (props: contentProp) => {
         <div id="content_border"/>
         <div id="content_background">
           <div id="content">
-            {props.content}
+            {ProjectContent()}
           </div>
         </div>
       </div>

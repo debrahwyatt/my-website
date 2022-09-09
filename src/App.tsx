@@ -9,6 +9,7 @@ import Overlay from './Overlay';
 import { useState } from 'react';
 import { Documentation, Home, Projects, About } from './Content';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import View from './Content/View';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <div className='content-body'>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/view" component={View} />
               <Route path="/about" component={About} />
               <Route path="/projects" component={Projects} />
               <Route path="/documentation" component={Documentation} />

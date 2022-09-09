@@ -23,9 +23,13 @@
   width: 100%;
   height: 100%;
   color: black;
-  font-size: 5rem;
-  text-decoration: none;
+  font-size: 4vw;
   font-family: 'Brush Script MT', cursive;
+}
+
+.banner_link {
+  text-decoration: none;
+  transform: scale(2);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,7 +38,6 @@
       bg-change infinite 60s linear, 
       rainbow-border infinite 10s linear;
   }
-  .banner-text { animation: text-change infinite 60s linear; }
 }
 
 @keyframes rainbow-border {
@@ -47,61 +50,3 @@
   84% { border: 1vh solid violet; }
   100% { border: 1vh solid red; }
 }
-
-/* 
-@keyframes bg-change {
-  0% { background-color: white; }
-  50% { background-color: white; }
-  51% { background-color: black; }
-  99% { background-color: black; }
-  100% { background-color: white; }
-}
-
-@keyframes text-change {
-  0% { color: black; }
-  50% { color: black; }
-  51% { color: white; }
-  99% { color: white; }
-  100% { color: black; }
-} */
-
-
-/* #scroll-text {
-
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  
-  -moz-animation: my-animation 20s linear infinite;
-  -webkit-animation: my-animation 20s linear infinite;
-  animation: my-animation 20s linear infinite;
-} */
-
-/* @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
-}
-
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  to {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-} */
-
-/* .banner:hover {
-  color: green !important;
-  transition: 0.2s;
-  background-color: grey !important;
-} */

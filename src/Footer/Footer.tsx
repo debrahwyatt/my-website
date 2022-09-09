@@ -5,6 +5,8 @@ const Footer = () => {
 
     return (
       <footer className="footer">
+        {/* <div className='sand'/> */}
+        <div className='lake'/>
         <SoundControl/>
       </footer>
     );
