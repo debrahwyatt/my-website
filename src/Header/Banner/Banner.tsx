@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className='banner center'>
       <div className='scroll_container'>
-          <Link to={'../View'} className="banner_link">
+          <Link to={'../view'} className="banner_link">
             <div id="scroll-text" className='banner-text banner_text center' >{banner_text}</div>
           </Link>
       </div>
