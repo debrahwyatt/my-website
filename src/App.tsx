@@ -1,15 +1,15 @@
 import './App.css';
 
-import Header from './Header';
 import Sound from './Sound';
+import Header from './Header';
 import Footer from './Footer';
 import Scenery from './Scenery';
 import Overlay from './Overlay';
+import View from './Content/View';
 
 import { useState } from 'react';
 import { Documentation, Home, Projects, About } from './Content';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import View from './Content/View';
 
 
 const App = () => {
@@ -19,12 +19,17 @@ const App = () => {
     setOverlayOpen(false)
   }  
 
+  const [bannerText, setBannerText] = useState("");
+
+  let loc = window.location.pathname;
+  let dir = loc.substring(0, loc.lastIndexOf('/'));
+
   return (
     <div className='app-wrapper'>
       <Sound/>
       <div className='app'>
         <Router>
-        <Header/>
+        <Header bannerText={dir}/>
         <div className='app-body'>    
           <Scenery/>
           <div className='content-body'>

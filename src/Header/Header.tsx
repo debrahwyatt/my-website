@@ -5,11 +5,15 @@ import { hoverSound } from '../Sound';
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 
-const Header = () => {
+interface headerProps {
+  bannerText: string
+}
+
+const Header = (props: headerProps) => {
 
     return (
       <header className="header">
-        <Banner/>
+        <Banner bannerText={''}/>
         <BackBtn />
         <span className='header_links'>
           <a href='https://github.com/debrahwyatt' target="_blank">

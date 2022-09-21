@@ -28,10 +28,10 @@
 
 .sign1 {
   z-index: 2;
-  top: 17vh;
+  bottom: 60vh;
   left: 5vw;
-  width: 40vw;
-  height: 20vw;
+  width: 35vw;
+  height: 15vw;
   font-size: 5vw;
   position: fixed;
   border-radius: 2vh;
