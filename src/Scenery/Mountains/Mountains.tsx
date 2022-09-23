@@ -1,4 +1,5 @@
 import './Mountains.css';
+import '../Cloud/Cloud.css';
 
 const Mountains = () => {
 

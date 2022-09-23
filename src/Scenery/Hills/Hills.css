@@ -22,67 +22,23 @@
   left: 25%;  
   clip: rect(0, 50vw, 100%, 0);
   background-color: rgb(10, 123, 10);
-  bottom: -9vh;
+  bottom: -12vh;
 }
 
 .hill-3 {
   right: -1.5vw;
   background-color: green;
   clip: rect(0, 45vw, 10vh, 0);
-  bottom: -10vh;
+  bottom: -11vh;
 }
 
 .stream {
   right: 2vw;
   background-color: blue;
   clip: rect(0, 45vw, 10vh, 0);
-  bottom: -10vh;
+  bottom: -12vh;
 }
 
-.mountain, .mountain-two, .mountain-three {
-  position: absolute;
-  bottom: 5vh;
-  right: 10vw;
-  border-left: 15vw solid transparent;
-  border-right: 15vw solid transparent;
-  border-bottom: 18vw solid #7ac1e4;
-}
-
-.mountain { 
-  right: 20vw;
-  bottom: 3.5vh;
-  border-bottom: 18vw solid #6dc1eb;
-}
-
-.mountain-two {
-  transform: scale(1.5);
-}
-
-.mountain-three {
-  bottom: 3.5vh;
-  right: -2vw;
-  border-bottom: 18vw solid #6fc1ea;
-}
-
-.mountain-top {
-  position: absolute;
-  right: -6vw;
-  border-left: 6vw solid transparent;
-  border-right: 6vw solid transparent;
-  border-bottom: 7vw solid #ceeaf6;
-}
-
-.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
-  position: absolute;
-  top: 7vw;
-  border-left: 2vw solid transparent;
-  border-right: 2vw solid transparent;
-  border-top: 2vw solid #ceeaf6;
-}
-
-.mountain-cap-1 { left: -6vw; }
-.mountain-cap-2 { left: -2vw; }
-.mountain-cap-3 { left: 2vw; }
 
 /* @media (prefers-reduced-motion: no-preference) {
   .hill-3 { animation: hill1-change infinite 60s linear; }
