@@ -1,20 +1,43 @@
 
-/* *{margin: 0; padding: 0; box-sizing: border-box;} */
-
 .cloud{
   border-radius: 50%;
   position: absolute;
   background: #FFFFFF;
-  height: 6vh; width: 6vh;
+  height: 4vw; width: 4vw;
+  top: 20vh;
   box-shadow:
-		#FFFFFF 6vh -1vh 0 -1vh, 
-		#FFFFFF 3vh -2vh, 
-		#FFFFFF 3vh 1vh, 
-		#FFFFFF 6vh 1vh 0 -1vh, 
-		#FFFFFF 8vh 1vh 0 -1vh;
+    #FFFFFF 2vw 0vh 0 0vh,
+    #FFFFFF 4vw 0vh 0 0vh,
+    #FFFFFF 1vw -3vh 0 0vh,
+    #FFFFFF 3vw -2vh 0 0vh;
+}
+
+.cloud2{
+  border-radius: 50%;
+  position: absolute;
+  background: #FFFFFF;
+  height: 2vw; width: 2vw;
+  top: 30vh;
+  box-shadow:
+    #FFFFFF 1vw 0vh 0 0vh,
+    #FFFFFF 2vw 0vh 0 0vh,
+    #FFFFFF 0.5vw -1.5vh 0 0vh,
+    #FFFFFF 1.5vw -1vh 0 0vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cloud, .cloud2 { animation: 
+    cloud_shift infinite 60s linear;
+    /* cloud_bounce infinite 5s alternate; */
+   }
 }
 
 @keyframes cloud_shift {
   0% { transform: translateX(-10vw); }
   100% { transform: translateX(110vw); }
 }
+
+/* @keyframes cloud_bounce {
+  0% { transform: translatey(-1vh); }
+  100% { transform: translatey(1vh); }
+} */

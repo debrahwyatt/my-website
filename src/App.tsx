@@ -13,23 +13,17 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 
 const App = () => {
-
   const [overlayOpen, setOverlayOpen] = useState(true);
   const onOverlayClose = () => {
     setOverlayOpen(false)
   }  
-
-  const [bannerText, setBannerText] = useState("");
-
-  let loc = window.location.pathname;
-  let dir = loc.substring(0, loc.lastIndexOf('/'));
 
   return (
     <div className='app-wrapper'>
       <Sound/>
       <div className='app'>
         <Router>
-        <Header bannerText={dir}/>
+        <Header bannerText={"Hey!"}/>
         <div className='app-body'>    
           <Scenery/>
           <div className='content-body'>
