@@ -40,10 +40,9 @@
 }
 
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .hill-3 { animation: hill1-change infinite 60s linear; }
+@media (prefers-reduced-motion: no-preference) {
   .hill-1 { animation: hill1-change infinite 60s linear; }
-  .hill-2 { animation: hill2-change infinite 60s linear; }
+  .hill-2 { animation: hill1-change infinite 60s linear; }
 }
 
 @keyframes hill1-change {
@@ -60,4 +59,4 @@
   52% {  background-color: rgb(9, 99, 9) }
   98% {  background-color: rgb(9, 99, 9) }
   100% {  background-color: rgb(10, 123, 10); }
-} */
+}
