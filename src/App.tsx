@@ -9,10 +9,16 @@ import View from './Content/View';
 
 import { useState } from 'react';
 import { Documentation, Home, Projects, About } from './Content';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
 const App = () => {
+  const [bannerText, setBannerText] = useState<string>('');
+
+  const updateBannerText = (text: string) => {
+    setBannerText(text);
+  };
+  
   const [overlayOpen, setOverlayOpen] = useState(true);
   const onOverlayClose = () => {
     setOverlayOpen(false)
@@ -27,13 +33,13 @@ const App = () => {
         <div className='app-body'>    
           <Scenery/>
           <div className='content-body'>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/view" component={View} />
-              <Route path="/about" component={About} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/documentation" component={Documentation} />
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Home setBannerText={updateBannerText} />} />
+              <Route path="/view" element={<View />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/documentation" element={<Documentation />} />
+            </Routes>
           </div>
         </div>
         <Footer/>

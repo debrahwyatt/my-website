@@ -1,19 +1,18 @@
-import { useState } from 'react';
 import Buttons from './Buttons';
 import './Home.css';
 
-interface ButtonProps {
-  setBannerText: (text: string) => void
+interface HomeProps {
+  setBannerText: (text: string) => void;
 }
 
-const Home = (props: ButtonProps) => {
-  const [bannerText, setBannerText] = useState("");
+const Home = (props: HomeProps) => {
+  // const [bannerText, setBannerText] = useState("");
 
   return (
     <div className="box-holder center home">
-      <Buttons title={"About"} url={"/about"} setBannerText={setBannerText}/>
-      <Buttons title={"Projects"} url={"/projects"} setBannerText={setBannerText}/>
-      <Buttons title={"Documentation"} url={"/documentation"} setBannerText={setBannerText}/>
+      <Buttons title={"About"} url={"/about"} setBannerText={props.setBannerText}/>
+      <Buttons title={"Projects"} url={"/projects"} setBannerText={props.setBannerText}/>
+      <Buttons title={"Documentation"} url={"/documentation"} setBannerText={props.setBannerText}/>
     </div>
   )
 }

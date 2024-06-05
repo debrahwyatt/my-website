@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom';
-import Magic from '../../../Magic';
+import { useNavigate } from 'react-router-dom';
+// import HoverSound from '@sound/HoverSound';
+import HoverSound from '../../../Sound/HoverSound';
+// import Magic from '../../../Magic';
 import './Buttons.css';
 
 interface ButtonProps {
@@ -10,22 +12,20 @@ interface ButtonProps {
 
 const Buttons = (props: ButtonProps) => {
   
-  const hover = document.getElementById("hover_sound") as HTMLAudioElement;
-  const hover_sound = () => {
-    hover.volume = 0.2
-    hover.play()
-  }
-
-
-  const updateBanner = () => {
-    Magic(props.title);
-  }
+  const navigate = useNavigate();
+  const hover_sound = HoverSound()
+  const goToPreviousPath = () => {
+    navigate(props.url);
+  };
+  // const updateBanner = () => {
+  //   Magic(props.title);
+  // }
   
   return (
     <div className="box center">
-      <Link to={props.url} onClick={updateBanner} onMouseOver={hover_sound} className='link floating_box center h2'>
+      <div onClick={goToPreviousPath} onMouseOver={hover_sound} className='link floating_box center h2'>
         <h2>{props.title}</h2>
-      </Link>
+      </div>
     </div>
   );
 }

@@ -1,19 +1,21 @@
 import './BackBtn.css';
 import { FaArrowLeft } from "react-icons/fa"
-import { hoverSound } from "../../Sound/HoverSound"
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+// import { HoverSound } from "../../Sound/HoverSound"
 
 
 const BackBtn = () => {
   
-    let history = useHistory();
-    const goToPreviousPath = () => {
-      history.push('/')
-    }
+  const navigate = useNavigate();
+
+  const goToPreviousPath = () => {
+    navigate('/');
+  };
 
     return (
       <div onClick={goToPreviousPath} className='back_btn'>
-        <FaArrowLeft id="back_btn" className="header_icon" onMouseOver={hoverSound}/>
+        {/* <FaArrowLeft id="back_btn" className="header_icon" onMouseOver={HoverSound}/> */}
+        <FaArrowLeft id="back_btn" className="header_icon"/>
       </div>
     );
 }

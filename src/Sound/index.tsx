@@ -1,5 +1,5 @@
 import Sound from './Sound'
-import { hoverSound } from './HoverSound'
+import HoverSound from './HoverSound'
 
 export default Sound
-export { hoverSound }
+export { HoverSound }
