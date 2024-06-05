@@ -1,0 +1,40 @@
+.sailboat {
+  bottom: 0;
+  width: 3vh;
+  height: 3vh;
+  position: absolute;
+}
+.sailboat_box {
+  position: absolute;
+
+}
+
+.sailboat_path {
+  bottom: 0;
+  left: -3vw;
+  width: 27vw;
+  margin-left: auto;
+  position: absolute;
+  transform-origin: center right;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sailboat_box { animation: sail infinite 100s linear; }
+  .sailboat { animation: sail2 infinite 4s linear; }
+
+}
+
+@keyframes sail {
+  0% { transform: translateX(0vw); }
+  5% { transform: translateX(0vw); }
+  45% { transform: translateX(27vw); }
+  55% { transform: translateX(27vw); }  
+  95% { transform: translateX(0vw); }
+  100% { transform: translateX(0vw); }
+}
+
+@keyframes sail2 {
+  0% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+  100% { transform: rotate(-1deg); }
+}
