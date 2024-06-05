@@ -23,7 +23,7 @@ const Buttons = (props: ButtonProps) => {
   
   return (
     <div className="box center">
-      <div onClick={goToPreviousPath} onMouseOver={hover_sound} className='link floating_box center h2'>
+      <div onClick={goToPreviousPath} onMouseEnter={hover_sound} className='link floating_box center h2'>
         <h2>{props.title}</h2>
       </div>
     </div>
