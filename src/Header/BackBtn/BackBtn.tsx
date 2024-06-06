@@ -2,7 +2,6 @@ import './BackBtn.css';
 import { FaArrowLeft } from "react-icons/fa"
 import { useNavigate } from "react-router-dom";
 import { HoverSound } from '../../Sound';
-// import { HoverSound } from "../../Sound/HoverSound"
 
 
 const BackBtn = () => {

@@ -35,8 +35,12 @@
 @media (prefers-reduced-motion: no-preference) {
   .banner {
     animation: 
-      bg-change infinite 60s linear, 
-      rainbow-border infinite 10s linear;
+      rainbow-border infinite 10s linear,
+      banner-bg-change infinite 60s linear;
+  }
+  .banner-text {
+    animation:
+      banner-text-change infinite 60s linear;
   }
 }
 
@@ -49,4 +53,22 @@
   70% { border: 1vh solid indigo; }
   84% { border: 1vh solid violet; }
   100% { border: 1vh solid red; }
+}
+
+@keyframes banner-bg-change {
+  0% { background-color: whitesmoke; }
+  10% { background-color: white; }
+  40% { background-color: white; }
+  50% { background-color: whitesmoke; }
+  51% { background-color: rgb(32, 32, 32); }
+  99% { background-color: rgb(32, 32, 32); }
+  100% { background-color: whitesmoke; }
+}
+
+@keyframes banner-text-change {
+  0% { color: black }
+  50% { color: black; }
+  51% { color: white; }
+  99% { color: white; }
+  100% { color: black; }
 }

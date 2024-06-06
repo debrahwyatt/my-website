@@ -6,7 +6,9 @@ const Sailboat = () => {
     return (
       <div className="sailboat_path">
         <div className='sailboat_box'>
-          <img src={SailboatImage} alt="Sailboat" className="sailboat" />
+          <div className='sailboat_box2'>
+            <img src={SailboatImage} alt="Sailboat" className="sailboat" />
+          </div>
         </div>
       </div>
     );

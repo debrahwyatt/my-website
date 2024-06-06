@@ -41,7 +41,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .header {
     animation: 
-      cloud-change infinite 60s linear, 
+      banner-change infinite 60s linear, 
       rainbow-border2 infinite 10s linear;
   }
   .header_icon {
@@ -57,7 +57,7 @@
   100% { color: black; }
 }
 
-@keyframes cloud-change {
+@keyframes banner-change {
   0% { background-color: whitesmoke; }
   10% { background-color: white; }
   40% { background-color: white; }

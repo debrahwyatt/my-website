@@ -4,9 +4,13 @@
   height: 3vh;
   position: absolute;
 }
+
 .sailboat_box {
   position: absolute;
+}
 
+.sailboat_box2 {
+  position: absolute;
 }
 
 .sailboat_path {
@@ -20,6 +24,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .sailboat_box { animation: sail infinite 100s linear; }
+  .sailboat_box2 { animation: sail3 infinite 2s linear; }
   .sailboat { animation: sail2 infinite 4s linear; }
 
 }
@@ -37,4 +42,10 @@
   0% { transform: rotate(-1deg); }
   50% { transform: rotate(1deg); }
   100% { transform: rotate(-1deg); }
+}
+
+@keyframes sail3 {
+  0% { transform: translateY(0vh); }
+  50% { transform: translateY(0.1vh); }
+  100% { transform: translateY(0vh); }
 }
