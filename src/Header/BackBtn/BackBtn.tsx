@@ -3,11 +3,16 @@ import { FaArrowLeft } from "react-icons/fa"
 import { useNavigate } from "react-router-dom";
 import { HoverSound } from '../../Sound';
 
+interface backBtnProps {
+  setBannerText: (text: string) => void
+}
 
-const BackBtn = () => {
+const BackBtn = (props: backBtnProps) => {
   const hover_sound = HoverSound()
-  const navigate = useNavigate();
+
+  const navigate = useNavigate()
   const goToPreviousPath = () => {
+    props.setBannerText("Debrah Wyatt");
     navigate('/');
   };
 

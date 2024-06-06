@@ -6,7 +6,8 @@ import { FaLinkedin } from "react-icons/fa"
 import { HoverSound } from '../Sound';
 
 interface headerProps {
-  bannerText: string
+  bannerText: string,
+  setBannerText: (text: string) => void
 }
 
 const Header = (props: headerProps) => {
@@ -14,8 +15,8 @@ const Header = (props: headerProps) => {
 
     return (
       <header className="header">
-        <Banner bannerText={''}/>
-        <BackBtn />
+        <Banner bannerText={props.bannerText}/>
+        <BackBtn setBannerText={props.setBannerText}/>
         <span className='header_links'>
           <a href='https://github.com/debrahwyatt' target="_blank">
             <FaGithub id="github_icon" onMouseEnter={hover_sound} className="header_icon"/>

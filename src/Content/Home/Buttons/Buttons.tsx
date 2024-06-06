@@ -1,7 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-// import HoverSound from '@sound/HoverSound';
 import HoverSound from '../../../Sound/HoverSound';
-// import Magic from '../../../Magic';
 import './Buttons.css';
 
 interface ButtonProps {
@@ -12,14 +10,13 @@ interface ButtonProps {
 
 const Buttons = (props: ButtonProps) => {
   
-  const navigate = useNavigate();
   const hover_sound = HoverSound()
+
+  const navigate = useNavigate()
   const goToPreviousPath = () => {
-    navigate(props.url);
+    navigate(props.url)
+    props.setBannerText(props.title)
   };
-  // const updateBanner = () => {
-  //   Magic(props.title);
-  // }
   
   return (
     <div className="box center">

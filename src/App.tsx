@@ -13,11 +13,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
 const App = () => {
-  const [bannerText, setBannerText] = useState<string>('');
-
-  const updateBannerText = (text: string) => {
-    setBannerText(text);
-  };
+  const [bannerText, setBannerText] = useState<string>('Debrah Wyatt');
   
   const [overlayOpen, setOverlayOpen] = useState(true);
   const onOverlayClose = () => {
@@ -29,12 +25,12 @@ const App = () => {
       <Sound/>
       <div className='app'>
         <Router>
-        <Header bannerText={"Hey!"}/>
+        <Header bannerText={bannerText} setBannerText={setBannerText}/>
         <div className='app-body'>    
           <Scenery/>
           <div className='content-body'>
             <Routes>
-              <Route path="/" element={<Home setBannerText={updateBannerText} />} />
+              <Route path="/" element={<Home setBannerText={setBannerText} />} />
               <Route path="/view" element={<View />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
