@@ -1,16 +1,17 @@
-import { FaVolumeMute } from "react-icons/fa"
-import { FaVolumeUp } from "react-icons/fa"
 import './SoundControl.css';
+import { FaVolumeUp } from "react-icons/fa"
+import { FaVolumeMute } from "react-icons/fa"
+
 
 const SoundControl = () => {
   
   let mute = true
-  
-  const Mute = () => {
-    const v_on = document.getElementById("volume-on") as HTMLDivElement;
-    const v_off = document.getElementById("volume-off") as HTMLDivElement;
-    const music = document.getElementById("music") as HTMLAudioElement;
+  const music = document.getElementById("music") as HTMLAudioElement;
+  const v_on = document.getElementById("volume-on") as HTMLDivElement;
+  const v_off = document.getElementById("volume-off") as HTMLDivElement;
 
+  const Mute = () => {
+    
     mute = mute !== true;
 
     if(mute) {
@@ -25,18 +26,17 @@ const SoundControl = () => {
   }
 
   const volume = (value: number) => {
-    const music = document.getElementById("music") as HTMLAudioElement;
     music.volume = value / 100
   }
 
   return (  
     <div className='volume-ctrl'>
       <input 
-      type = "range" 
-      min = "0" 
-      max = "50" 
-      defaultValue = "25" 
-      onChange = {e => volume(+e.target.value)}
+        type = "range" 
+        min = "0" 
+        max = "50" 
+        defaultValue = "25" 
+        onChange = {e => volume(+e.target.value)}
       />
       &nbsp;
       <span>

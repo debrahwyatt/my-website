@@ -27,43 +27,44 @@
 }
 
 .sign1 {
-  z-index: 2;
-  bottom: 60vh;
   left: 5vw;
+  z-index: 2;
   width: 35vw;
   height: 15vw;
+  bottom: 60vh;
   font-size: 5vw;
+  color: white;
   position: fixed;
+  font-weight: bold;
   border-radius: 2vh;
   pointer-events: none;
   transform: rotate(10deg);
   background-color: red;
   border: 1vh solid white;
-  font-weight: bold;
-  color: white;
 }
 
 .sign2 {
   z-index: 2;
-  bottom: 30vh;
   left: 15vw;
   width: 15vw;
   height: 15vw;
+  bottom: 30vh;
   font-size: 3vw;
-  position: fixed;
   border-radius: 2vh;
-  pointer-events: none;
   transform: rotate(-47deg);
-  background-color: yellow;
-  border: 1vh solid black;
-  font-weight: bold;
+
   color: black;
+  position: fixed;
+  font-weight: bold;
+  pointer-events: none;
+  border: 1vh solid black;
+  background-color: yellow;  
 }
 
 .sign_text {
   font-size: 3vw;
-  transform: rotate(45deg);
   text-align: center;
+  transform: rotate(45deg);
 }
 
 #blast-btn {
@@ -107,15 +108,3 @@
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
-
-/* #overlay_rim {
-  top: 0;
-  left: 0;  
-  z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  pointer-events: none;
-  background-color: green;
-  clip: rect(5vh, 96.5vw, 95vh, 3.5vw);
-} */

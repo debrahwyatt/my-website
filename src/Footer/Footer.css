@@ -9,9 +9,9 @@
 }
 
 .volume-ctrl {
-  margin-right: 4vh;
   right: 0;
   top: 2vh;
+  margin-right: 4vh;
   position: absolute;
 }
 
@@ -23,17 +23,6 @@
   background-color: blue;
   border-bottom-right-radius: 50%;
 }
-
-/* .sand {
-  width: 65%;
-  top: -1.5vh;
-  height: 1.5vh;
-  position: absolute;
-  background-color: #C2B280;
-  border-top-right-radius: 10%;
-  border-bottom-right-radius: 50%;
-} */
-
 
 @media (prefers-reduced-motion: no-preference) {
   .footer { animation: ground-change infinite 60s linear; }

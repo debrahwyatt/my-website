@@ -19,10 +19,10 @@ const CreateCloud = () => {
   cloud.style.width = cloud.style.height = 2 * scaler + "vw"
   cloud.style.animation = "cloud_shift infinite linear " + duration + " " + delay
   cloud.style.boxShadow = 
-  "#FFFFFF " + (1 * scaler) + "vw 0 0 0, " +
-  "#FFFFFF " + (2 * scaler) + "vw 0 0 0, " + 
-  "#FFFFFF " + (0.5 * scaler) + "vw " + (-1.5 * scaler) + "vh 0 0, " +
-  "#FFFFFF " + (1.5 * scaler) + "vw " + (-1 * scaler) + "vh 0 0"  
+    "#FFFFFF " + (1 * scaler) + "vw 0 0 0, " +
+    "#FFFFFF " + (2 * scaler) + "vw 0 0 0, " + 
+    "#FFFFFF " + (0.5 * scaler) + "vw " + (-1.5 * scaler) + "vh 0 0, " +
+    "#FFFFFF " + (1.5 * scaler) + "vw " + (-1 * scaler) + "vh 0 0"  
 
   element.appendChild(cloud);
 }

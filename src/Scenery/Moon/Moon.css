@@ -1,14 +1,15 @@
 .moon {
-  right: 10vw;
   width: 8vh;
   height: 8vh;
-  border-radius: 50%;
+  right: 10vw;
   position: fixed;
+  border-radius: 50%;
   background-color: white;
-  box-shadow: 0 0 1vw white,
-  0 0 60vw white,
-  0 0 1vw grey,
-  inset 0 0 2vw grey;
+  box-shadow: 
+    0 0 1vw white,
+    0 0 60vw white,
+    0 0 1vw grey,
+    inset 0 0 2vw grey;
 }
 
 #moon_sky {
@@ -22,11 +23,11 @@
 }
 
 #moon_clip {
-  right: 10vw;
   width: 8vh;
   height: 8vh;
-  border-radius: 50%;
+  right: 10vw;
   position: fixed;
+  border-radius: 50%;
   clip-path: circle(4vh);
 }
 
@@ -48,9 +49,9 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  #moon_sky { animation: moon_phase infinite 240s; }
   .moon { animation: moon_shift infinite alternate 240s linear; }
   #moon_clip { animation: moon_shift infinite alternate 240s linear; }
-  #moon_sky { animation: moon_phase infinite 240s; }
 }
 
 @keyframes moon_shift {
@@ -58,20 +59,14 @@
   100% { transform: translateX(0); }
 }
 
-/* @keyframes moon_phase {
-  0% { transform: translateX(11vh); }
-  50% { transform: translateX(0vh); }
-  100% { transform: translateX(-11vh); }
-} */
-
 @keyframes moon_phase {
   0% { transform: translateX(9vh); }
-  25.1% { transform: translateX(9vh); }
-  25.2% { transform: translateX(3vh); }
-  50.1% { transform: translateX(3vh); }
-  50.2% { transform: translateX(0vh); }
-  75.1% { transform: translateX(0vh); }
-  75.2% { transform: translateX(-3vh); }
+  26% { transform: translateX(9vh); }
+  26.1% { transform: translateX(3vh); }
+  51% { transform: translateX(3vh); }
+  51.1% { transform: translateX(0vh); }
+  76% { transform: translateX(0vh); }
+  76.1% { transform: translateX(-3vh); }
   99.9% { transform: translateX(-3vh); }
   100% { transform: translateX(9vh); }
 }

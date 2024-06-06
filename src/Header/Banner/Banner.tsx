@@ -11,7 +11,7 @@ const Banner = (props: bannerProps) => {
     <div className='banner center'>
       <div className='scroll_container'>
           <Link to={'../view'} className="banner_link">
-            <div id="scroll-text" className='banner-text banner_text center' >{props.bannerText}</div>
+            <div id="scroll-text" className='banner-text center' >{props.bannerText}</div>
           </Link>
       </div>
     </div>

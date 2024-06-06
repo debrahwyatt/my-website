@@ -1,8 +1,7 @@
-import { AboutContent } from './About';
-import { DocumentationContent } from './Documentation';
-import { ProjectContent } from './Projects';
-
 import './Content.css';
+import { AboutContent } from './About';
+import { ProjectContent } from './Projects';
+import { DocumentationContent } from './Documentation';
 
 
 interface contentProp {

@@ -23,24 +23,23 @@
   position: fixed;
   border-radius: 2vh;
   pointer-events: none;
-  border: solid rgb(32, 32, 32) 1vh;
   border: solid white 1vh;
 }
 
 #content_background {
   width: 60vw;
   height: 50vh;
+  padding: 2px;
   opacity: 0.80;
   position: fixed;
   background-color: white;
   background-color: rgb(32, 32, 32);
-  padding: 2px;
 }
 
 #content {
-  color: white;
   padding: 2vh;
   font-size: 2vh;
+  color: white;
   overflow-y: auto;
   overflow-x: hidden;
   height: calc(100% - 4vh);

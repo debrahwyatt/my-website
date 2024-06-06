@@ -1,6 +1,6 @@
+import './Buttons.css';
 import { useNavigate } from 'react-router-dom';
 import HoverSound from '../../../Sound/HoverSound';
-import './Buttons.css';
 
 interface ButtonProps {
   url: string
@@ -11,7 +11,6 @@ interface ButtonProps {
 const Buttons = (props: ButtonProps) => {
   
   const hover_sound = HoverSound()
-
   const navigate = useNavigate()
   const goToPreviousPath = () => {
     navigate(props.url)

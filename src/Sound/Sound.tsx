@@ -1,6 +1,6 @@
-import codeMonkey from './media/code-monkey.mp3';
+// import birds from './media/birds.mp3';
+// import codeMonkey from './media/code-monkey.mp3';
 import beachAmbiance from './media/beach-ambiance.mp3';
-import birds from './media/birds.mp3';
 import blast_door from './media/blast-door.mp3';
 import hover_sound from './media/hover_button.mp3';
 

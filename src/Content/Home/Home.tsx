@@ -1,12 +1,11 @@
-import Buttons from './Buttons';
 import './Home.css';
+import Buttons from './Buttons';
 
 interface HomeProps {
   setBannerText: (text: string) => void;
 }
 
 const Home = (props: HomeProps) => {
-  // const [bannerText, setBannerText] = useState("");
 
   return (
     <div className="box-holder center home">

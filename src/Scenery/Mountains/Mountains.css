@@ -1,7 +1,7 @@
 .mountain1, .mountain2, .mountain3 {
-  position: absolute;
   bottom: 3vh;
   right: 10vw;
+  position: absolute;
   border-left: 15vw solid transparent;
   border-right: 15vw solid transparent;
 }
@@ -24,19 +24,19 @@
 }
 
 .mountain-top {
-  position: absolute;
   right: -6vw;
+  position: absolute;
   border-left: 6vw solid transparent;
   border-right: 6vw solid transparent;
   border-bottom: 7.1vw solid #ceeaf6;
 }
 
 .mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
-  position: absolute;
   top: 7vw;
+  position: absolute;
+  border-top: 2vw solid #ceeaf6;
   border-left: 2vw solid transparent;
   border-right: 2vw solid transparent;
-  border-top: 2vw solid #ceeaf6;
 }
 
 .mountain-cap-1 { left: -6vw; }
@@ -50,25 +50,25 @@
 }
 
 @keyframes mountain1-change {
-  0% {  border-bottom: 18vw solid #2d4f60 }
-  50% {  border-bottom: 18vw solid #2d4f60 }
-  51% {  border-bottom: 18vw solid #223c49 }
-  98% {  border-bottom: 18vw solid #223c49  }
-  100% {  border-bottom: 18vw solid #2d4f60 }
+  0% { border-bottom: 18vw solid #2d4f60 }
+  50% { border-bottom: 18vw solid #2d4f60 }
+  51% { border-bottom: 18vw solid #223c49 }
+  98% { border-bottom: 18vw solid #223c49 }
+  100% { border-bottom: 18vw solid #2d4f60 }
 }
 
 @keyframes mountain2-change {
-  0% {  border-bottom: 18vw solid #33556a }
-  50% {  border-bottom: 18vw solid #33556a }
-  51% {  border-bottom: 18vw solid #2f4f63 }
-  98% {  border-bottom: 18vw solid #2f4f63  }
-  100% {  border-bottom: 18vw solid #33556a }
+  0% { border-bottom: 18vw solid #33556a }
+  50% { border-bottom: 18vw solid #33556a }
+  51% { border-bottom: 18vw solid #2f4f63 }
+  98% { border-bottom: 18vw solid #2f4f63 }
+  100% { border-bottom: 18vw solid #33556a }
 }
 
 @keyframes mountain3-change {
-  0% {  border-bottom: 18vw solid #32506b }
-  50% {  border-bottom: 18vw solid #32506b}
-  51% {  border-bottom: 18vw solid #284056 }
-  98% {  border-bottom: 18vw solid #284056 }
-  100% {  border-bottom: 18vw solid #32506b }
+  0% { border-bottom: 18vw solid #32506b }
+  50% { border-bottom: 18vw solid #32506b}
+  51% { border-bottom: 18vw solid #284056 }
+  98% { border-bottom: 18vw solid #284056 }
+  100% { border-bottom: 18vw solid #32506b }
 }

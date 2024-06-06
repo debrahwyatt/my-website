@@ -1,27 +1,28 @@
 .sun {
   width: 7vh;
   height: 7vh;
-  background-color: yellow;
   border-radius: 50%;
+  background-color: yellow;
   background: radial-gradient(yellow, orange);
-  box-shadow: 0 0 1vh orange,
-  0 0 6vh orange,
-  0 0 20vh yellow,
-  inset 0 0 80px yellow;
+  box-shadow: 
+    0 0 1vh orange,
+    0 0 6vh orange,
+    0 0 20vh yellow,
+    inset 0 0 80px yellow;
 }
 
 .sun_holder {
-  width: 45vw;
   bottom: 0;
   right: 50%;
-  position: absolute;
+  width: 45vw;
   margin-left: auto;
+  position: absolute;
   transform-origin: center right;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .sun_holder { animation: 
-    sun-rotate infinite 60s linear;
+  .sun_holder { 
+    animation: sun-rotate infinite 60s linear;
    }
 }
 

@@ -1,10 +1,10 @@
 
 .cloud{
+  top: 20vh;
   border-radius: 50%;
   position: absolute;
   background: #FFFFFF;
   height: 4vw; width: 4vw;
-  top: 20vh;
   box-shadow:
     #FFFFFF 2vw 0vh 0 0vh,
     #FFFFFF 4vw 0vh 0 0vh,
@@ -13,11 +13,11 @@
 }
 
 .cloud2{
+  top: 30vh;
   border-radius: 50%;
   position: absolute;
   background: #FFFFFF;
   height: 2vw; width: 2vw;
-  top: 30vh;
   box-shadow:
     #FFFFFF 1vw 0vh 0 0vh,
     #FFFFFF 2vw 0vh 0 0vh,

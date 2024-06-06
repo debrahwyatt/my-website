@@ -1,5 +1,5 @@
-import Content from '../Content';
 import './Documentation.css';
+import Content from '../Content';
 
 
 const Documentation = () => {

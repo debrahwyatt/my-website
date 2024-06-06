@@ -15,19 +15,19 @@
 }
 
 @keyframes sky-change {
-  0% {  background-color: orangered; }
-  10% {  background-color: lightskyblue; }
-  40% {  background-color: lightskyblue; }
-  50% {  background-color: orangered; }
-  52% {  background-color: darkblue; }
-  98% {  background-color: darkblue; }
-  100% {  background-color: orangered; }
+  0% { background-color: orangered; }
+  10% { background-color: lightskyblue; }
+  40% { background-color: lightskyblue; }
+  50% { background-color: orangered; }
+  52% { background-color: darkblue; }
+  98% { background-color: darkblue; }
+  100% { background-color: orangered; }
 }
 
 @keyframes star-fade {
-  0% {  opacity: 1 }
-  50% {  opacity: 1 }
-  51% {  opacity: 0 }
-  99% {  opacity: 0 }
-  100% {  opacity: 1 }
+  0% { opacity: 1 }
+  50% { opacity: 1 }
+  51% { opacity: 0 }
+  99% { opacity: 0 }
+  100% { opacity: 1 }
 }
