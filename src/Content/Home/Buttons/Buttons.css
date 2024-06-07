@@ -1,11 +1,11 @@
 .box {
   z-index: 1;
-  width: 30vw;
+  width: 20vw;
   margin: 1vh;
-  height: 10vh;
+  height: 4vw;
   border-radius: 3vh;
   background-color: grey;  
-  border: 1vh solid white;
+  border: 0.5vw solid white;
 }
 
 .floating_box:hover {

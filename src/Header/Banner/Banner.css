@@ -1,8 +1,8 @@
 .banner {
-  top: 2vh;
+  top: calc(6.5vh - 2.5vw);
   z-index: 1;
   width: 40vw;
-  height: 10vh;
+  height: 5vw;
   position: absolute;
   border-radius: 1vh;
   transform-origin: 50%;
@@ -17,15 +17,14 @@
   height: 100%;
   overflow: hidden;  
   border-radius: 5px;
-
 }
 
 .banner-text {
   width: 100%;
-  height: 100%;
+  height: 90%;
   color: black;
-  font-size: 4vw;
-  font-family: 'Brush Script MT', cursive;
+  font-size: 3vw;
+  font-family: cursive;
 }
 
 .banner_link {
