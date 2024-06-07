@@ -1,8 +1,8 @@
 import './Sailboat.css';
-import SailboatImage from '../../../workshop/Sailboat.png'; // Import the PNG image
+import SailboatImage from './Sailboat.png';
 
 const Sailboat = () => {
-
+  
     return (
       <div className="sailboat_path">
         <div className='sailboat_box'>

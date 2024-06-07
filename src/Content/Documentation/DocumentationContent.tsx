@@ -1,4 +1,4 @@
-import sys_diag from './img/my-website_sys_diag.png'
+import sys_diag from './my-website_sys_diag.png'
 
 export const DocumentationContent = () => {
 

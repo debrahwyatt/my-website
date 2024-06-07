@@ -8,7 +8,6 @@
 
     /* Bundler mode */
     "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -23,9 +22,15 @@
     /* Path aliases */
     "baseUrl": "./",
     "paths": {
-      "@sound/*": ["./src/Sound/*"],
-    }
+      "@sound/*": ["./src/Sound/*"]
+    },
+
+    /* Synthetic default imports */
+    "allowSyntheticDefaultImports": true,
+
+    /* Include Jest and Testing Library types */
+    "types": ["jest", "node", "@testing-library/jest-dom"]
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "**/*.ts", "**/*.tsx", "**/*.png"],
+  "references": [{ "path": "./tsconfig.node.json" }],
 }
