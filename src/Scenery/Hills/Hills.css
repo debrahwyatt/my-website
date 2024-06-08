@@ -1,42 +1,28 @@
-#hills {
-  width: 100%;
-  overflow: hidden;
-}
 
 .hill {
-  width: 50%;
   height: 20vh;
-  bottom: -10vh;
   position: absolute;
   border-radius: 100%;
+  bottom: -9em;
+
 }
 
 .hill-1 {
-  left: -2vw;
-  bottom: -13vh;
-  background-color: green;
-  clip: rect(0, 50vw, 7vh, 0);
-}
-
-.hill-2 {
-  left: 25%;  
-  bottom: -12vh;
-  clip: rect(0, 50vw, 100%, 0);
+  left: 27%;  
+  width: 50%;
   background-color: rgb(10, 123, 10);
 }
 
-.hill-3 {
-  right: -1.5vw;
-  bottom: -11vh;
+.hill-2 {
+  width: 60%;
+  right: -12vw;
   background-color: green;
-  clip: rect(0, 45vw, 10vh, 0);
 }
 
 .stream {
+  width: 50%;
   right: 2vw;
-  bottom: -12vh;
   background-color: blue;
-  clip: rect(0, 45vw, 10vh, 0);
 }
 
 @media (prefers-reduced-motion: no-preference) {

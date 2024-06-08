@@ -1,24 +1,24 @@
 .mountain1, .mountain2, .mountain3 {
-  bottom: 3vh;
-  right: 10vw;
   position: absolute;
   border-left: 15vw solid transparent;
   border-right: 15vw solid transparent;
 }
 
 .mountain1 {
+  bottom: 3vh;
+  right: 10vw;
   transform: scale(1.5);
   border-bottom: 18vw solid #2d4f60;
 }
 
 .mountain2 { 
   right: 20vw;
-  bottom: 3.5vh;
+  bottom: 3vh;
   border-bottom: 18vw solid #33556a;
 }
 
 .mountain3 {
-  bottom: 0vh;
+  bottom: 1vh;
   right: -1vw;
   border-bottom: 18vw solid #32506b;
 }
