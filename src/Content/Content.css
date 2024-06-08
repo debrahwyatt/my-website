@@ -30,16 +30,16 @@
   width: 60vw;
   height: 50vh;
   padding: 2px;
-  opacity: 0.80;
   position: fixed;
-  background-color: white;
-  background-color: rgb(32, 32, 32);
+  background-color: rgba(32, 32, 32, 0.8); 
 }
 
 #content {
+  opacity: 1; 
   padding: 2vh;
   font-size: 2vh;
   color: white;
+  display: 'flex';
   overflow-y: auto;
   overflow-x: hidden;
   height: calc(100% - 4vh);

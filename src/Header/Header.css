@@ -5,7 +5,7 @@
   position: relative;
   border-radius: 4vh 4vh 0 0;
   background-color: whitesmoke;
-  border-bottom: 1vh solid lightgray;
+  border-bottom: 0.5vw solid lightgray;
 }
 
 .header_icon {
@@ -48,12 +48,12 @@
 }
 
 @keyframes rainbow-border2 {
-  0% { border-bottom: 1vh solid red; }
-  14% { border-bottom: 1vh solid orange; }
-  28% { border-bottom: 1vh solid yellow; }
-  42% { border-bottom: 1vh solid green; }
-  56% { border-bottom: 1vh solid blue; }
-  70% { border-bottom: 1vh solid indigo; }
-  84% { border-bottom: 1vh solid violet; }
-  100% { border-bottom: 1vh solid red; }
+  0% { border-bottom: 0.5vw solid red; }
+  14% { border-bottom: 0.5vw solid orange; }
+  28% { border-bottom: 0.5vw solid yellow; }
+  42% { border-bottom: 0.5vw solid green; }
+  56% { border-bottom: 0.5vw solid blue; }
+  70% { border-bottom: 0.5vw solid indigo; }
+  84% { border-bottom: 0.5vw solid violet; }
+  100% { border-bottom: 0.5vw solid red; }
 }

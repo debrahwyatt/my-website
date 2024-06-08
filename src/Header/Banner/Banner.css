@@ -1,13 +1,13 @@
 .banner {
-  top: calc(6.5vh - 2.5vw);
+  top: calc(6.75vh - 2.5vw);
   z-index: 1;
   width: 40vw;
   height: 5vw;
   position: absolute;
-  border-radius: 1vh;
+  border-radius: 1vw;
   transform-origin: 50%;
   left:  calc(50% - 20vw);
-  border: 1vh solid red;
+  border: 0.5vw solid red;
   transform: rotate(-1deg);
   background-color: white;
 }
@@ -44,14 +44,14 @@
 }
 
 @keyframes rainbow-border {
-  0% { border: 1vh solid red; }
-  14% { border: 1vh solid orange; }
-  28% { border: 1vh solid yellow; }
-  42% { border: 1vh solid green; }
-  56% { border: 1vh solid blue; }
-  70% { border: 1vh solid indigo; }
-  84% { border: 1vh solid violet; }
-  100% { border: 1vh solid red; }
+  0% { border: 0.5vw solid red; }
+  14% { border: 0.5vw solid orange; }
+  28% { border: 0.5vw solid yellow; }
+  42% { border: 0.5vw solid green; }
+  56% { border: 0.5vw solid blue; }
+  70% { border: 0.5vw solid indigo; }
+  84% { border: 0.5vw solid violet; }
+  100% { border: 0.5vw solid red; }
 }
 
 @keyframes banner-bg-change {
