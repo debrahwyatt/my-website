@@ -1,0 +1,8 @@
+.lake {
+  width: calc(55%);
+  top: -1.5vh;
+  height: 0.75vh;
+  position: relative;
+  background-color: blue;
+  border-bottom-right-radius: 50%;
+}

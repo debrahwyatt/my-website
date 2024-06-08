@@ -7,13 +7,29 @@
 }
 
 .volume-span {
+  height:5vh;
   display: flex;
   align-items: center;
-
-  height:100%;
 }
 
 #volume-value {
   height: 2vh;
-  width: 10vw;
+  max-width: 25vw;
+}
+
+.volume-ctrl {
+  width: calc(100%);
+  margin-right: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sound-ctrl {
+  display: flex;
+  position: relative;
+  align-items: center; 
+  top: -0.75vh;
+  height: 100%;
+  width: 100%;
 }

@@ -1,11 +1,12 @@
 import './Footer.css';
+import Lake from './Lake';
 import SoundControl from './SoundControl';
 
 const Footer = () => {
 
     return (
       <footer className="footer">
-        <div className='lake'/>
+        <Lake/>
         <SoundControl/>
       </footer>
     );

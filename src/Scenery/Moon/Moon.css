@@ -49,7 +49,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #moon_sky { animation: moon_phase infinite 240s; }
+  #moon_sky { animation: moon_phase infinite 240s step-end;}
   .moon { animation: moon_shift infinite alternate 240s linear; }
   #moon_clip { animation: moon_shift infinite alternate 240s linear; }
 }
@@ -61,12 +61,12 @@
 
 @keyframes moon_phase {
   0% { transform: translateX(9vh); }
-  26% { transform: translateX(9vh); }
-  26.1% { transform: translateX(3vh); }
+  27% { transform: translateX(9vh); }
+  27.1% { transform: translateX(3vh); }
   51% { transform: translateX(3vh); }
   51.1% { transform: translateX(0vh); }
-  76% { transform: translateX(0vh); }
-  76.1% { transform: translateX(-3vh); }
+  77% { transform: translateX(0vh); }
+  77.1% { transform: translateX(-3vh); }
   99.9% { transform: translateX(-3vh); }
   100% { transform: translateX(9vh); }
 }

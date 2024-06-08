@@ -33,20 +33,22 @@ const SoundControl = () => {
   }
 
   return (  
-    <div className='volume-ctrl'>
-      <input 
-        type = "range" 
-        min = "0" 
-        max = "50" 
-        defaultValue = "25" 
-        id = "volume-value"
-        onChange = {e => volume(+e.target.value)}
-      />
-      &nbsp;
-      <span className='volume-span'>
-        <FaVolumeUp id="volume-on" className='volume-on-off' onClick={Mute}/>
-        <FaVolumeMute id="volume-off" className='volume-on-off' onClick={Mute}/>
-      </span>
+    <div className='sound-ctrl'>
+      <div className='volume-ctrl'>
+        <input 
+          type = "range" 
+          min = "0" 
+          max = "50" 
+          defaultValue = "25" 
+          id = "volume-value"
+          onChange = {e => volume(+e.target.value)}
+        />
+        &nbsp;
+        <span className='volume-span'>
+          <FaVolumeUp id="volume-on" className='volume-on-off' onClick={Mute}/>
+          <FaVolumeMute id="volume-off" className='volume-on-off' onClick={Mute}/>
+        </span>
+      </div>
     </div>
   )
 }

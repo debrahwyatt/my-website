@@ -13,12 +13,12 @@
 
 .mountain2 { 
   right: 20vw;
-  bottom: 3vh;
+  bottom: 1vh;
   border-bottom: 18vw solid #33556a;
 }
 
 .mountain3 {
-  bottom: 1vh;
+  bottom: 1vw;
   right: -1vw;
   border-bottom: 18vw solid #32506b;
 }
