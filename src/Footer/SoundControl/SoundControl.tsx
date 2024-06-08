@@ -39,12 +39,13 @@ const SoundControl = () => {
         min = "0" 
         max = "50" 
         defaultValue = "25" 
+        id = "volume-value"
         onChange = {e => volume(+e.target.value)}
       />
       &nbsp;
-      <span>
-        <FaVolumeUp id="volume-on" onClick={Mute}/>
-        <FaVolumeMute id="volume-off" onClick={Mute}/>
+      <span className='volume-span'>
+        <FaVolumeUp id="volume-on" className='volume-on-off' onClick={Mute}/>
+        <FaVolumeMute id="volume-off" className='volume-on-off' onClick={Mute}/>
       </span>
     </div>
   )

@@ -1,5 +1,9 @@
 .back_btn {
-  margin-top: auto;
-  margin-left: 1em;
-  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+#back_btn {
+  border-radius: 25%;
 }

@@ -8,30 +8,10 @@
   border-bottom: 1vh solid lightgray;
 }
 
-.header_links {
-  margin-top: auto;
-  margin-right: 2em;
-  margin-left: auto;
-  margin-bottom: auto;
-}
-
 .header_icon {
   width: 4vh;
   height: 4vh;
   color: black;
-  margin-left: 2vh;
-}
-
-#back_btn {
-  border-radius: 25%;
-}
-
-#github_icon {
-  border-radius: 50%;
-}
-
-#linkedin_icon {
-  border-radius: 15%;
 }
 
 .header_icon:hover {

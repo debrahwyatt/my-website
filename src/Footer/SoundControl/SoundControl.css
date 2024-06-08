@@ -1,3 +1,19 @@
 #volume-off {
   display: none;
 }
+
+.volume-on-off {
+  height: 100%;
+}
+
+.volume-span {
+  display: flex;
+  align-items: center;
+
+  height:100%;
+}
+
+#volume-value {
+  height: 2vh;
+  width: 15vw;
+}

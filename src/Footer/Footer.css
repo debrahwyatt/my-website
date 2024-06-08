@@ -9,10 +9,12 @@
 }
 
 .volume-ctrl {
-  right: 0;
-  top: 2vh;
+  right: 1vw;
+  width: 40%;
+  display: flex;
   margin-right: 4vh;
-  position: absolute;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .lake {
