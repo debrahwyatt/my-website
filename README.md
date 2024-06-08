@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# My Website
+This website is a reflection of who I am, and also serves as a portfolio of what I'm able to accomplish by myself.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tree
+├───src
+│   ├───Content
+│   │   ├───About
+│   │   ├───Documentation
+│   │   ├───Home
+│   │   │   └───Buttons
+│   │   ├───Projects
+│   │   └───View
+│   ├───Footer
+│   │   └───SoundControl
+│   ├───Header
+│   │   ├───BackBtn
+│   │   ├───Banner
+│   │   └───Socials
+│   ├───Overlay
+│   ├───Scenery
+│   │   ├───BackgroundFade
+│   │   ├───Cloud
+│   │   ├───Hills
+│   │   ├───Moon
+│   │   ├───Mountains
+│   │   ├───Sailboat
+│   │   ├───Stars
+│   │   └───Sun
+│   └───Sound
+│       └───media
+└───workshop
 
-Currently, two official plugins are available:
+# Development
+Simply run `npm run dev` to hotload the project. It will output a local port which the website will run on.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Testing
+run `npm test` for an output of any issues with the code. Currently it's stuck on the way src tags are used with imports of .mp3's and .png's, though this doesn't affect the code.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Deployment
+The project can be built using the command `vite build`, which will output the project to the dist folder. 
+Actual deployment is still being investigated since this website cannot exisit locally forever.
