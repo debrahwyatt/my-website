@@ -1,27 +1,29 @@
 
 .hill {
-  height: calc(15vh + 2vw);
+  /* height: 10vh; */
+  height: calc(7vw + 7vh);
   position: absolute;
-  border-radius: 100%;
-  bottom: -12vh;
-
+  border-top-left-radius: 100%; 
+  border-top-right-radius: 0%;
+  bottom: -7vh;
+  right: 0vw;
 }
 
 .hill-1 {
-  left: 20%;  
   width: 70%;
+  border-top-right-radius: 100%;
   background-color: rgb(10, 123, 10);
 }
 
 .hill-2 {
-  width: 70%;
-  right: -15vw;
+  width: 55%;
   background-color: green;
 }
 
 .stream {
-  width: 60%;
-  right: -3vw;
+  width: 65%;
+  border-top-left-radius: 90%; 
+  border-top-right-radius: 0%;
   background-color: blue;
 }
 

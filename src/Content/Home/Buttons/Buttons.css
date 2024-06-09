@@ -10,6 +10,8 @@
 
 .floating_box:hover {
   margin: -1vh;
+  width: 20.5vw;
+  height: 4.5vw;
   padding: 0.1vh;
   color: black;
   transition: 0.2s;  
