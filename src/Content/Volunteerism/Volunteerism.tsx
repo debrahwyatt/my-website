@@ -4,7 +4,7 @@ import Content from '../Content';
 const Volunteerism = () => {
 
   return (
-    <Content url={'Volunteerism'}/>
+    <Content url={'volunteerism'}/>
   )
 }
 
