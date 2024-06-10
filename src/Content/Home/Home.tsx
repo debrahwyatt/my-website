@@ -11,7 +11,9 @@ const Home = (props: HomeProps) => {
     <div className="box-holder center home">
       <Buttons title={"About"} url={"/about"} setBannerText={props.setBannerText}/>
       <Buttons title={"Projects"} url={"/projects"} setBannerText={props.setBannerText}/>
+      <Buttons title={"Volunteerism"} url={"/volunteerism"} setBannerText={props.setBannerText}/>
       <Buttons title={"Documentation"} url={"/documentation"} setBannerText={props.setBannerText}/>
+      <Buttons title={"Work Experience"} url={"/workexperience"} setBannerText={props.setBannerText}/>
     </div>
   )
 }

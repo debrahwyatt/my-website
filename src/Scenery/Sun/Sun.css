@@ -11,6 +11,10 @@
     inset 0 0 80px yellow;
 }
 
+#troll {
+  visibility: hidden;
+}
+
 .sun_holder {
   bottom: 0;
   right: 50%;

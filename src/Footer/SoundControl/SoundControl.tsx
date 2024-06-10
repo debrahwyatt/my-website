@@ -6,7 +6,7 @@ import { FaVolumeMute } from "react-icons/fa"
 const SoundControl = () => {
   
   let mute = true
-  const music = document.getElementById("music") as HTMLAudioElement;
+  // const music = document.getElementById("music") as HTMLAudioElement;
   const hover_sound = document.getElementById("hover_sound") as HTMLAudioElement;
   const blast_door_sound = document.getElementById("blast_door_sound") as HTMLAudioElement;
 
@@ -18,18 +18,18 @@ const SoundControl = () => {
     mute = mute !== true;
 
     if(mute) {
-      music.muted = hover_sound.muted = blast_door_sound.muted = true
+      hover_sound.muted = blast_door_sound.muted = true
       v_on.style.display = "none"
       v_off.style.display = "inline-block"
       return
     }
-    music.muted = hover_sound.muted = blast_door_sound.muted = false
+    hover_sound.muted = blast_door_sound.muted = false
     v_off.style.display = "none"
     v_on.style.display = "inline-block"
   }
 
   const volume = (value: number) => {
-    music.volume = hover_sound.volume = blast_door_sound.volume = value / 100
+    hover_sound.volume = blast_door_sound.volume = value / 100
   }
 
   return (  
@@ -38,8 +38,8 @@ const SoundControl = () => {
         <input 
           type = "range" 
           min = "0" 
-          max = "50" 
-          defaultValue = "25" 
+          max = "25" 
+          defaultValue = "12.5" 
           id = "volume-value"
           onChange = {e => volume(+e.target.value)}
         />

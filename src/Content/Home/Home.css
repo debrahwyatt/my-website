@@ -1,12 +1,12 @@
 .box-holder {
-  height: 100%; 
+  /* height: 50%;  */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .home {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   display: flex;
   flex-direction: column;

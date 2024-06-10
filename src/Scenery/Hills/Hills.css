@@ -18,10 +18,11 @@
 .hill-2 {
   width: 55%;
   background-color: green;
+  bottom: -6.5vh;
 }
 
 .stream {
-  width: 65%;
+  width: 60%;
   border-top-left-radius: 90%; 
   border-top-right-radius: 0%;
   background-color: blue;

@@ -8,17 +8,17 @@ interface OverlayProps {
 const Overlay = (props: OverlayProps) => {
     
   const onClose = () => {
-    const music = document.getElementById("music") as HTMLAudioElement
+    // const music = document.getElementById("music") as HTMLAudioElement
     const blast_btn = document.getElementById("blast-btn") as HTMLDivElement
     const left_door = document.getElementById("left-door") as HTMLDivElement
     const right_door = document.getElementById("right-door") as HTMLDivElement
     const overlay_bg = document.getElementById("overlay_bg") as HTMLDivElement
     const blast_door = document.getElementById("blast_door_sound") as HTMLAudioElement;
 
-    music.volume = 0.25
-    blast_door.volume = 0.1
-    
-    music.play()
+    // music.volume = 0.25
+    // music.play()
+
+    blast_door.volume = 0.1    
     blast_door.play()    
 
     blast_btn.style.display = "none"

@@ -7,11 +7,17 @@ interface bannerProps {
 
 const Banner = (props: bannerProps) => {
   
+  const BannerClick = () => {
+    // console.log("HERE")
+    // const content = document.getElementById("content-body") as HTMLElement;
+    // content.style.display = 'none';
+  }
+
   return (
     <div className='banner'>
       <div className='scroll_container'>
           <Link to={'../view'} className="banner_link">
-            <div id="scroll-text" className='banner-text center' >{props.bannerText}</div>
+            <div id="scroll-text" className='banner-text center' onClick={BannerClick}>{props.bannerText}</div>
           </Link>
       </div>
     </div>

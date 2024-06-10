@@ -8,7 +8,7 @@ import Overlay from './Overlay';
 import View from './Content/View';
 
 import { useState } from 'react';
-import { Documentation, Home, Projects, About } from './Content';
+import { Documentation, Home, Projects, About, WorkExperience, Volunteerism } from './Content';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
@@ -28,14 +28,16 @@ const App = () => {
         <Header bannerText={bannerText} setBannerText={setBannerText}/>
         <div className='app-body'>    
           <Scenery/>
-          <div className='content-body'>
+          <div id='content-body'>
             <Routes>
               <Route path="/" element={<Home setBannerText={setBannerText} />} />
               <Route path="/view" element={<View />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/volunteerism" element={<Volunteerism />} />
               <Route path="/documentation" element={<Documentation />} />
-            </Routes>
+              <Route path="/workexperience" element={<WorkExperience />} />
+            </Routes>            
           </div>
         </div>
         <Footer/>

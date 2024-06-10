@@ -1,7 +1,9 @@
 import './Content.css';
 import { AboutContent } from './About';
 import { ProjectContent } from './Projects';
+import { VolunteerismContent } from './Volunteerism';
 import { DocumentationContent } from './Documentation';
+import { WorkExperienceContent } from './WorkExperience';
 
 interface contentProp {
   url: string
@@ -16,7 +18,9 @@ const Content = (props: contentProp) => {
           <div id="content">
             {props.url === "about" && AboutContent()}
             {props.url === "projects" && ProjectContent()}
+            {props.url === "Volunteerism" && VolunteerismContent()}
             {props.url === "documentation" && DocumentationContent()}
+            {props.url === "WorkExperience" && WorkExperienceContent()}
           </div>
         </div>
       </div>
