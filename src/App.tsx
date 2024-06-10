@@ -8,12 +8,12 @@ import Overlay from './Overlay';
 import View from './Content/View';
 
 import { useState } from 'react';
-import { Documentation, Home, Projects, About, WorkExperience, Volunteerism } from './Content';
+import { Documentation, Home, Projects, About, WorkExperience, Volunteerism, Education, Certification, Contact } from './Content';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
 const App = () => {
-  const [bannerText, setBannerText] = useState<string>('Debrah Wyatt');
+  const [bannerText, setBannerText] = useState<string>('Debrah Wyatt E.I.T.');
   
   const [overlayOpen, setOverlayOpen] = useState(true);
   const onOverlayClose = () => {
@@ -33,8 +33,11 @@ const App = () => {
               <Route path="/" element={<Home setBannerText={setBannerText} />} />
               <Route path="/view" element={<View />} />
               <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/education" element={<Education />} />
               <Route path="/volunteerism" element={<Volunteerism />} />
+              <Route path="/certification" element={<Certification />} />
               <Route path="/documentation" element={<Documentation />} />
               <Route path="/workexperience" element={<WorkExperience />} />
             </Routes>            
