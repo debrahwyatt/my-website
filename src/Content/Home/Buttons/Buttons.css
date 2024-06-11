@@ -2,21 +2,18 @@
   z-index: 1;
   width: 20vw;
   margin: 1vh;
-  height: 4vw;
+  height: 3vw;
   border-radius: 3vh;
   background-color: grey;  
   border: 0.5vw solid white;
 }
 
 .floating_box:hover {
-  margin: -1vh;
-  width: 20.5vw;
-  height: 4.5vw;
-  padding: 0.1vh;
   color: black;
-  transition: 0.2s;  
+  transition: 0s;  
   border-radius: 3vh;
   background-color: white;
+  border: 0.5vw solid white;
 }
 
 .link {

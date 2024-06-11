@@ -8,7 +8,7 @@ interface HomeProps {
 const Home = (props: HomeProps) => {
 
   return (
-    <div className="box-holder center home">
+    <div className="box-holder">
       <Buttons title={"About"} url={"/about"} setBannerText={props.setBannerText}/>
       <Buttons title={"Contact"} url={"/contact"} setBannerText={props.setBannerText}/>
       <Buttons title={"Projects"} url={"/projects"} setBannerText={props.setBannerText}/>

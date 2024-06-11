@@ -44,3 +44,7 @@
   overflow-x: hidden;
   height: calc(100% - 4vh);
 }
+
+ul {
+  margin-top: 0;
+}
