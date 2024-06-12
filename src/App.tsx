@@ -30,7 +30,7 @@ const App = () => {
           <Scenery/>
           <div id='content-body'>
             <Routes>
-              <Route path="/" element={<Home setBannerText={setBannerText} />} />
+              <Route path="/my-website" element={<Home setBannerText={setBannerText} />} />
               <Route path="/view" element={<View />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />

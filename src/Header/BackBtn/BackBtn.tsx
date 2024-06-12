@@ -13,7 +13,7 @@ const BackBtn = (props: backBtnProps) => {
   const navigate = useNavigate()
   const goToPreviousPath = () => {
     props.setBannerText("Debrah Wyatt E.I.T.");
-    navigate('/');
+    navigate('/my-website');
   };
 
     return (
