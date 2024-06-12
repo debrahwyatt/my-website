@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 // import beachAmbiance from './media/beach-ambiance.mp3';
 import blast_door from './media/blast-door.mp3';
 import hover_sound from './media/hover_button.mp3';
+import troll_sound from './media/troll-quack.mp3';
 
 const Sound = () => {
 
@@ -18,6 +19,9 @@ const Sound = () => {
       </audio> */}
       <audio id="hover_sound" className='audio'>
         <source src={hover_sound} type="audio/mpeg" />
+      </audio>
+      <audio id="troll_sound" className='audio'>
+        <source src={troll_sound} type="audio/mpeg" />
       </audio>
       <audio id="blast_door_sound" className='audio'>
         <source src={blast_door} type="audio/mpeg" />

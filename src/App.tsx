@@ -30,16 +30,16 @@ const App = () => {
           <Scenery/>
           <div id='content-body'>
             <Routes>
-              <Route path="/my-website" element={<Home setBannerText={setBannerText} />} />
-              <Route path="/view" element={<View />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/education" element={<Education />} />
-              <Route path="/volunteerism" element={<Volunteerism />} />
-              <Route path="/certification" element={<Certification />} />
-              <Route path="/documentation" element={<Documentation />} />
-              <Route path="/workexperience" element={<WorkExperience />} />
+              <Route path="/my-website/" element={<Home setBannerText={setBannerText} />} />
+              <Route path="/view/" element={<View />} />
+              <Route path="/about/" element={<About />} />
+              <Route path="/contact/" element={<Contact />} />
+              <Route path="/projects/" element={<Projects />} />
+              <Route path="/education/" element={<Education />} />
+              <Route path="/volunteerism/" element={<Volunteerism />} />
+              <Route path="/certification/" element={<Certification />} />
+              <Route path="/documentation/" element={<Documentation />} />
+              <Route path="/workexperience/" element={<WorkExperience />} />
             </Routes>            
           </div>
         </div>

@@ -23,15 +23,15 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .sailboat { animation: sail2 infinite 4s linear; }
-  .sailboat_box { animation: sail3 infinite 2s linear; }
+  .sailboat_box { animation: sail3 infinite 4s linear; }
   .sailboat_box2 { animation: sail infinite 50s ease-in-out; }
 }
 
 @keyframes sail {
   0% { transform: translateX(0vw); }
   5% { transform: translateX(0vw); }
-  45% { transform: translateX(34vw); }
-  55% { transform: translateX(34vw); }  
+  45% { transform: translateX(36vw); }
+  55% { transform: translateX(36vw); }  
   95% { transform: translateX(0vw); }
   100% { transform: translateX(0vw); }
 }

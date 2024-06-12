@@ -1,4 +1,5 @@
 .sun {
+
   width: 7vh;
   height: 7vh;
   border-radius: 50%;
@@ -9,10 +10,15 @@
     0 0 6vh orange,
     0 0 20vh yellow,
     inset 0 0 80px yellow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #troll {
-  visibility: hidden;
+  opacity: 0;
+  text-align: center;
 }
 
 .sun_holder {
@@ -25,9 +31,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .sun_holder { 
-    animation: sun-rotate infinite 60s linear;
-   }
+  .sun_holder { animation: sun-rotate infinite 60s linear; }
+}
+
+.troll-animate {
+  animation: showTroll 1s forwards; /* Adjust the duration as needed */
 }
 
 @keyframes sun-rotate {
@@ -37,3 +45,19 @@
   51% { transform: scale(0); }  
   100% { transform: scale(0); }
 }
+
+
+/* @keyframes troll-counter-rotate {
+  0% { transform: rotate(2deg); }
+  25% { transform: rotate(-90deg); }
+  50% { transform: rotate(-183deg); }
+  51% { transform: scale(0); }  
+  100% { transform: scale(0); }
+} */
+
+@keyframes showTroll {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+

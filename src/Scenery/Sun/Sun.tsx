@@ -4,9 +4,15 @@ import trollface from './trollface.png'
 const Sun = () => {
 
   const SunClick = () => {
-    console.log("HERE")
+    const trollQuack = document.getElementById("troll_sound") as HTMLAudioElement;
+    trollQuack.volume = 0.125;
+    trollQuack.currentTime = 0;
+    trollQuack.play();
+    
     const troll = document.getElementById("troll") as HTMLElement;
-    troll.style.visibility = 'visible';
+    troll.classList.remove('troll-animate');
+    void troll.offsetWidth; // Trigger reflow
+    troll.classList.add('troll-animate');
   }
 
     return (
